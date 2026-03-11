@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PropOS — The Global Property Market Operating System | Early Access 2025</title>
+<meta name="description" content="PropOS is the world's first complete property operating system. One unified platform for landlords, tenants, agents, developers, contractors, suppliers, transporters, lawyers, accountants, engineers and government bodies. AI-powered. 13 modules. Launching 2025.">
+<meta name="keywords" content="property management software, property operating system, PropOS, proptech, landlord software, estate agent platform, contractor management, property developer tools, property AI, building intelligence, trust score, PropAS certification, property marketplace">
+<meta name="author" content="PropOS">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://propos.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PropOS — The Global Property Market Operating System">
+<meta property="og:description" content="13 modules. Every role. One platform. AI-powered property OS for every participant in the global property market. Launching 2025.">
+<meta property="og:url" content="https://propos.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PropOS — The Global Property Market Operating System">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PropOS","description":"The Global Property Market Operating System — 13 modules unifying every participant, process, and intelligence layer in the global property market.","applicationCategory":"BusinessApplication","operatingSystem":"Web, iOS, Android","publisher":{"@type":"Organization","name":"PropOS","url":"https://propos.io"},"offers":{"@type":"AggregateOffer","lowPrice":"29","highPrice":"499","priceCurrency":"GBP"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════════════
+   PROPOS LANDING v3 — COMPLETE PROPERTY MARKET OS
+   Design: Editorial luxury · dark ink on cream · gold accents
+   UX Rules: Mobile-first · 3 breakpoints · WCAG AA
+   Fonts: Cormorant Garamond (display) + DM Sans (body) + DM Mono (labels)
+══════════════════════════════════════════════════════════ */
+
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:16px}
+img{display:block;max-width:100%}
+button{cursor:pointer;font-family:inherit}
+
+/* ── DESIGN TOKENS ── */
+:root{
+  /* Backgrounds */
+  --bg-root:   #060402;
+  --bg-alt:    #0a0805;
+  --bg-alt2:   #0e0c08;
+  --bg-surface:#131008;
+
+  /* Type */
+  --t-ink:     #ece6da;
+  --t-ink2:    rgba(236,230,218,0.72);
+  --t-ink3:    rgba(236,230,218,0.44);
+  --t-ink4:    rgba(236,230,218,0.22);
+  --t-ink5:    rgba(236,230,218,0.12);
+
+  /* Gold palette */
+  --gold:      #a87000;
+  --gold2:     #c8900a;
+  --gold3:     #e8b830;
+  --gold4:     #f5d060;
+  --gold-glow: rgba(168,112,0,0.16);
+  --gold-glow2:rgba(168,112,0,0.08);
+
+  /* Status */
+  --green:     #1a6840;
+  --green-bg:  rgba(26,104,64,0.12);
+  --blue:      #1a4080;
+  --blue-bg:   rgba(26,64,128,0.12);
+  --rust:      #8c2810;
+  --rust-bg:   rgba(140,40,16,0.12);
+
+  /* Borders */
+  --border:    rgba(168,112,0,0.14);
+  --border2:   rgba(255,255,255,0.06);
+  --border3:   rgba(168,112,0,0.28);
+
+  /* Layout */
+  --nav-h:     62px;
+  --max-w:     1200px;
+  --col-gap:   2px;
+
+  /* Typography scale */
+  --f-xs:      10px;
+  --f-sm:      12px;
+  --f-base:    14px;
+  --f-md:      16px;
+  --f-lg:      18px;
+  --f-xl:      22px;
+  --f-2xl:     28px;
+  --f-3xl:     36px;
+  --f-4xl:     48px;
+  --f-5xl:     64px;
+
+  /* Spacing */
+  --s2: 8px; --s3: 12px; --s4: 16px; --s5: 20px;
+  --s6: 24px; --s8: 32px; --s10: 40px; --s12: 48px;
+  --s16: 64px; --s20: 80px; --s24: 96px; --s32: 128px;
+
+  /* Transitions */
+  --t-fast: 0.15s ease;
+  --t-base: 0.24s ease;
+  --t-slow: 0.4s cubic-bezier(0.2,0,0.2,1);
+}
+
+/* ── BASE ── */
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--bg-root);
+  color:var(--t-ink);
+  font-size:var(--f-base);
+  font-weight:300;
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Grain texture overlay */
+body::after{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
+  opacity:0.022;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ── UTILITIES ── */
+.container{max-width:var(--max-w);margin:0 auto;padding:0 var(--s12)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.label{
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:0.22em;text-transform:uppercase;color:var(--gold2);
+}
+
+.eyebrow{
+  display:flex;align-items:center;gap:14px;margin-bottom:var(--s5);
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:0.22em;text-transform:uppercase;color:var(--gold2);
+}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--gold2);flex-shrink:0}
+
+.sec-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(28px,3.5vw,50px);
+  font-weight:700;letter-spacing:-1px;line-height:1.05;
+  color:var(--t-ink);margin-bottom:var(--s5);
+}
+.sec-title em{font-style:italic;color:var(--gold2)}
+.sec-title .dim{color:var(--t-ink4)}
+
+.sec-lead{
+  font-size:var(--f-base);color:var(--t-ink3);
+  max-width:580px;line-height:1.8;font-weight:300;
+  margin-bottom:var(--s12);
+}
+
+.live-dot{
+  width:6px;height:6px;border-radius:50%;flex-shrink:0;
+  background:var(--gold2);box-shadow:0 0 8px var(--gold2);
+  animation:pulse 2.8s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.2;transform:scale(0.45)}}
+
+/* Shared card border style */
+.card-border{border:1px solid var(--border);position:relative}
+.card-border::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,var(--gold) 0%,var(--gold3) 50%,transparent 100%);
+  opacity:0;transition:opacity var(--t-base);
+}
+.card-border:hover::before{opacity:1}
+
+/* ── NAVIGATION ── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  height:var(--nav-h);
+  display:flex;align-items:center;
+  padding:0 var(--s12);
+  background:rgba(6,4,2,0.92);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border2);
+  transition:border-color var(--t-base);
+}
+#nav.scrolled{border-bottom-color:var(--border)}
+
+.nav-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px;font-weight:700;letter-spacing:-0.5px;
+  color:var(--t-ink);text-decoration:none;flex-shrink:0;line-height:1;
+}
+.nav-logo em{color:var(--gold2);font-style:normal}
+
+.nav-pill{
+  font-family:'DM Mono',monospace;font-size:7.5px;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:var(--gold2);border:1px solid rgba(168,112,0,0.3);
+  padding:3px 9px;margin-left:12px;flex-shrink:0;
+}
+
+.nav-links{
+  display:flex;align-items:center;margin-left:32px;gap:0;list-style:none;
+}
+.nav-links a{
+  font-family:'DM Mono',monospace;font-size:8px;
+  letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--t-ink4);text-decoration:none;
+  padding:8px 14px;transition:color var(--t-fast);white-space:nowrap;
+}
+.nav-links a:hover{color:var(--t-ink2)}
+
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+
+.btn{
+  font-family:'DM Mono',monospace;font-size:8.5px;
+  letter-spacing:0.15em;text-transform:uppercase;
+  padding:9px 20px;text-decoration:none;
+  transition:background var(--t-fast),color var(--t-fast),border-color var(--t-fast);
+  white-space:nowrap;font-weight:400;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-ghost{
+  color:var(--t-ink3);border:1px solid var(--border2);background:transparent;
+}
+.btn-ghost:hover{color:var(--t-ink);border-color:rgba(255,255,255,0.14)}
+.btn-gold{
+  background:var(--gold);color:#0a0804;border:1px solid var(--gold);font-weight:500;
+}
+.btn-gold:hover{background:var(--gold2);border-color:var(--gold2)}
+
+/* Hamburger */
+.nav-hamburger{
+  display:none;background:none;border:none;
+  flex-direction:column;gap:5px;padding:8px;margin-left:8px;
+}
+.nav-hamburger span{
+  display:block;width:19px;height:1.5px;
+  background:var(--t-ink3);border-radius:1px;
+  transition:transform 0.2s,opacity 0.2s;
+}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+/* Drawer */
+#nav-drawer{
+  position:fixed;top:var(--nav-h);left:0;right:0;z-index:499;
+  background:rgba(8,6,3,0.97);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  padding:var(--s5) var(--s6) var(--s8);
+  flex-direction:column;gap:2px;
+  display:none;
+}
+#nav-drawer.open{display:flex}
+#nav-drawer a{
+  font-family:'DM Mono',monospace;font-size:10px;
+  letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--t-ink3);text-decoration:none;
+  padding:14px 4px;border-bottom:1px solid rgba(255,255,255,0.04);
+  transition:color var(--t-fast);
+}
+#nav-drawer a:hover,#nav-drawer a:focus{color:var(--gold2)}
+.drawer-cta{
+  margin-top:var(--s5);text-align:center;
+  background:var(--gold)!important;color:#0a0804!important;
+  border:none!important;padding:14px!important;font-weight:500!important;
+}
+
+/* ── HERO ── */
+#hero{
+  min-height:100vh;
+  padding:calc(var(--nav-h) + 72px) var(--s12) 80px;
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;
+}
+
+/* Grid lines */
+#hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:
+    repeating-linear-gradient(0deg,transparent,transparent 79px,rgba(168,112,0,0.04) 79px,rgba(168,112,0,0.04) 80px),
+    repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(168,112,0,0.04) 79px,rgba(168,112,0,0.04) 80px);
+}
+
+.hero-radial{
+  position:absolute;pointer-events:none;
+  width:1000px;height:1000px;top:-350px;left:-280px;
+  background:radial-gradient(ellipse,rgba(168,112,0,0.11) 0%,transparent 65%);
+  animation:radial-drift 16s ease-in-out infinite;
+}
+.hero-radial-2{
+  position:absolute;pointer-events:none;
+  width:600px;height:600px;bottom:-200px;right:-100px;
+  background:radial-gradient(ellipse,rgba(168,112,0,0.07) 0%,transparent 65%);
+}
+@keyframes radial-drift{0%,100%{transform:translate(0,0)}35%{transform:translate(70px,50px)}70%{transform:translate(-50px,80px)}}
+
+.hero-inner{
+  position:relative;z-index:1;
+  max-width:var(--max-w);width:100%;margin:0 auto;
+  display:grid;grid-template-columns:1fr 460px;gap:72px;align-items:center;
+}
+
+/* Hero left */
+.hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:var(--s6)}
+.hero-eyebrow span{
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:0.24em;text-transform:uppercase;color:var(--gold2);
+}
+
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(48px,6.5vw,88px);
+  font-weight:700;letter-spacing:-2px;line-height:0.97;
+  margin-bottom:var(--s3);
+}
+.hero-title em{color:var(--gold2);font-style:italic}
+.hero-title .ghost{color:rgba(236,230,218,0.2);display:block}
+
+.hero-desc{
+  font-size:clamp(14px,1.5vw,16px);color:var(--t-ink3);
+  line-height:1.8;margin:var(--s8) 0 var(--s10);
+  max-width:520px;font-weight:300;
+}
+.hero-desc strong{color:var(--t-ink2);font-weight:500}
+
+.hero-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--border);padding-top:var(--s8);
+  gap:0;
+}
+.hstat{padding:0 var(--s6) 0 0;border-right:1px solid var(--border2)}
+.hstat:last-child{border-right:none;padding-right:0}
+.hstat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:36px;font-weight:700;letter-spacing:-1px;line-height:1;
+}
+.hstat-num em{color:var(--gold2);font-style:normal}
+.hstat-lbl{
+  font-family:'DM Mono',monospace;font-size:7.5px;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:var(--t-ink4);margin-top:5px;
+}
+
+/* Hero right: signup card */
+.hero-card{
+  background:rgba(255,255,255,0.025);
+  border:1px solid var(--border);
+  padding:var(--s8) var(--s8);position:relative;overflow:hidden;
+}
+.hero-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold3) 60%,transparent);
+}
+
+.card-eyebrow{
+  font-family:'DM Mono',monospace;font-size:8px;
+  letter-spacing:0.2em;text-transform:uppercase;color:var(--gold2);
+  display:flex;align-items:center;gap:8px;margin-bottom:var(--s5);
+}
+.card-headline{
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px;font-weight:700;letter-spacing:-0.5px;
+  color:var(--t-ink);margin-bottom:var(--s3);line-height:1.2;
+}
+.card-body{font-size:13px;color:var(--t-ink3);line-height:1.7;margin-bottom:var(--s6)}
+
+/* Email form */
+.email-group{display:flex;flex-direction:column;gap:var(--s3)}
+.email-row{display:flex;gap:0}
+.email-input{
+  flex:1;background:rgba(255,255,255,0.04);
+  border:1px solid var(--border);border-right:none;
+  color:var(--t-ink);font-family:'DM Sans',sans-serif;
+  font-size:13px;font-weight:300;padding:13px 16px;outline:none;
+  transition:border-color var(--t-fast),background var(--t-fast);
+  min-width:0;
+}
+.email-input::placeholder{color:var(--t-ink4)}
+.email-input:focus{border-color:rgba(168,112,0,0.45);background:rgba(255,255,255,0.06)}
+.email-sub{
+  font-family:'DM Mono',monospace;font-size:8.5px;
+  letter-spacing:0.14em;text-transform:uppercase;
+  background:var(--gold);color:#0a0804;
+  border:1px solid var(--gold);padding:13px 20px;
+  font-weight:500;white-space:nowrap;transition:background var(--t-fast);
+}
+.email-sub:hover{background:var(--gold2);border-color:var(--gold2)}
+.form-note{
+  font-family:'DM Mono',monospace;font-size:7.5px;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--t-ink4);
+}
+.form-success{
+  display:none;align-items:center;gap:12px;
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--gold2);
+  padding:12px 0;
+}
+.success-chk{
+  width:28px;height:28px;border:1px solid var(--gold2);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:11px;flex-shrink:0;
+}
+
+.card-perks{margin-top:var(--s5);display:flex;flex-direction:column;gap:7px}
+.cperk{
+  display:flex;align-items:center;gap:10px;
+  font-family:'DM Mono',monospace;font-size:7.5px;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--t-ink4);
+}
+.cperk::before{
+  content:'✓';color:var(--gold2);font-size:9px;
+  border:1px solid rgba(168,112,0,0.25);width:16px;height:16px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+
+/* ── SHARED SECTION FRAME ── */
+.section{padding:var(--s24) var(--s12)}
+.section--alt{background:var(--bg-alt)}
+.section--alt2{background:var(--bg-alt2)}
+
+/* ── REVEAL ANIMATION ── */
+.r{opacity:0;transform:translateY(18px);transition:opacity 0.6s ease,transform 0.6s ease}
+.r.on{opacity:1;transform:none}
+.d1{transition-delay:0.08s}.d2{transition-delay:0.16s}.d3{transition-delay:0.24s}.d4{transition-delay:0.32s}.d5{transition-delay:0.4s}
+
+/* ── PROBLEM SECTION ── */
+.problem-strip{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border:1px solid var(--border);margin-top:0;
+}
+.ps-card{
+  padding:var(--s8) var(--s8);border-right:1px solid var(--border);
+  position:relative;overflow:hidden;transition:background var(--t-base);
+}
+.ps-card:last-child{border-right:none}
+.ps-card:hover{background:var(--gold-glow2)}
+.ps-card::after{
+  content:'';position:absolute;top:0;left:0;width:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+  transition:width 0.4s;
+}
+.ps-card:hover::after{width:100%}
+.ps-num{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:var(--t-ink5);margin-bottom:var(--s5)}
+.ps-icon{font-size:20px;display:block;margin-bottom:12px}
+.ps-title{font-size:15px;font-weight:500;color:var(--t-ink);margin-bottom:8px;letter-spacing:-0.2px}
+.ps-desc{font-size:13px;color:var(--t-ink3);line-height:1.72}
+
+/* ── LAYER STACK ── */
+.layer-stack{border:1px solid var(--border)}
+.layer-row{
+  display:flex;align-items:stretch;
+  border-bottom:1px solid rgba(168,112,0,0.07);
+  transition:background var(--t-fast);cursor:default;
+}
+.layer-row:last-child{border-bottom:none}
+.layer-row:hover{background:var(--gold-glow2)}
+.layer-label{
+  width:172px;flex-shrink:0;padding:22px var(--s5);
+  border-right:1px solid rgba(168,112,0,0.07);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.ll-code{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:4px}
+.ll-name{font-size:13px;font-weight:500;color:var(--t-ink)}
+.layer-mods{flex:1;padding:16px var(--s5);display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.lmod{
+  font-family:'DM Mono',monospace;font-size:7.5px;
+  letter-spacing:0.1em;text-transform:uppercase;
+  padding:5px 10px;border:1px solid rgba(168,112,0,0.13);color:var(--t-ink4);
+  transition:color var(--t-fast),border-color var(--t-fast);
+}
+.layer-row:hover .lmod{color:var(--t-ink3);border-color:rgba(168,112,0,0.26)}
+
+/* ── USER ROLE CARDS ── */
+.roles-tabs{display:flex;gap:0;border:1px solid var(--border);border-bottom:none;flex-wrap:wrap}
+.rtab{
+  font-family:'DM Mono',monospace;font-size:8px;letter-spacing:0.14em;text-transform:uppercase;
+  padding:12px 18px;color:var(--t-ink4);cursor:pointer;
+  border-right:1px solid var(--border);border-bottom:2px solid transparent;
+  transition:color var(--t-fast),border-bottom-color var(--t-fast),background var(--t-fast);
+  white-space:nowrap;
+}
+.rtab:last-child{border-right:none}
+.rtab:hover{color:var(--t-ink2);background:var(--gold-glow2)}
+.rtab.active{color:var(--gold2);border-bottom-color:var(--gold2)}
+
+.roles-panel{display:none;border:1px solid var(--border);padding:var(--s8)}
+.roles-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8)}
+
+.rp-left{}
+.rp-code{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:var(--s3)}
+.rp-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;letter-spacing:-0.5px;color:var(--t-ink);margin-bottom:var(--s3);line-height:1.1}
+.rp-tagline{font-size:13px;color:var(--t-ink3);line-height:1.7;margin-bottom:var(--s5)}
+.rp-desc{font-size:13px;color:var(--t-ink3);line-height:1.75;margin-bottom:var(--s6)}
+
+.rp-steps{display:flex;flex-direction:column;gap:2px;margin-bottom:var(--s5)}
+.rpstep{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:10px 12px;background:rgba(255,255,255,0.015);
+  border-left:2px solid transparent;transition:border-color var(--t-fast),background var(--t-fast);
+}
+.rpstep:hover{border-left-color:var(--gold2);background:var(--gold-glow2)}
+.rpstep-n{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.1em;color:var(--gold2);flex-shrink:0;padding-top:1px}
+.rpstep-t{font-size:12.5px;color:var(--t-ink3);line-height:1.58}
+.rpstep-t strong{color:var(--t-ink2);font-weight:500}
+
+.rp-ai{
+  border:1px solid var(--border);padding:14px 16px;background:var(--gold-glow2);
+  margin-bottom:var(--s4);
+}
+.rp-ai-lbl{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px}
+.rp-ai-text{font-size:12px;color:var(--t-ink3);line-height:1.6}
+
+.rp-tags{display:flex;flex-wrap:wrap;gap:5px}
+.rptag{
+  font-family:'DM Mono',monospace;font-size:7px;
+  letter-spacing:0.1em;text-transform:uppercase;
+  padding:4px 9px;border:1px solid var(--border);color:var(--t-ink4);
+}
+
+/* Right column: sub-features */
+.rp-right{}
+.rp-right h4{font-size:11px;font-family:'DM Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:var(--s4)}
+.rp-modules{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.rpm{
+  padding:12px 14px;background:rgba(255,255,255,0.02);
+  border:1px solid rgba(168,112,0,0.1);
+  transition:background var(--t-fast);
+}
+.rpm:hover{background:var(--gold-glow2)}
+.rpm-name{font-size:12px;font-weight:500;color:var(--t-ink2);margin-bottom:4px}
+.rpm-desc{font-size:11px;color:var(--t-ink4);line-height:1.5}
+
+/* Provider Business OS special section */
+.pbos-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border:1px solid var(--border);
+}
+.pbos-card{
+  padding:var(--s6) var(--s5);
+  border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+  transition:background var(--t-base);
+}
+.pbos-card:nth-child(3n){border-right:none}
+.pbos-card:nth-last-child(-n+3){border-bottom:none}
+.pbos-card:hover{background:var(--gold-glow2)}
+.pbos-icon{font-size:20px;display:block;margin-bottom:12px}
+.pbos-code{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}
+.pbos-name{font-size:14px;font-weight:500;color:var(--t-ink);margin-bottom:8px;letter-spacing:-0.2px}
+.pbos-desc{font-size:12.5px;color:var(--t-ink3);line-height:1.68;margin-bottom:var(--s3)}
+.pbos-unique{
+  font-size:11.5px;color:var(--gold2);
+  padding:8px 10px;border-left:2px solid rgba(168,112,0,0.35);
+  background:var(--gold-glow2);line-height:1.5;
+}
+.pbos-unique strong{font-weight:500}
+
+/* ── GROWTH FLYWHEEL ── */
+.flywheel{
+  display:flex;flex-direction:column;gap:2px;
+  border:1px solid var(--border);
+}
+.fw-step{
+  display:flex;align-items:stretch;gap:0;
+  border-bottom:1px solid rgba(168,112,0,0.07);
+  transition:background var(--t-fast);
+}
+.fw-step:last-child{border-bottom:none}
+.fw-step:hover{background:var(--gold-glow2)}
+.fw-num{
+  width:52px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  border-right:1px solid rgba(168,112,0,0.07);
+  font-family:'Cormorant Garamond',serif;font-size:28px;
+  font-weight:700;color:rgba(168,112,0,0.25);
+}
+.fw-body{flex:1;padding:18px var(--s5)}
+.fw-title{font-size:14px;font-weight:500;color:var(--t-ink);margin-bottom:4px}
+.fw-desc{font-size:12.5px;color:var(--t-ink3);line-height:1.6}
+.fw-tag{
+  width:180px;flex-shrink:0;padding:18px var(--s5);
+  border-left:1px solid rgba(168,112,0,0.07);
+  display:flex;align-items:center;justify-content:center;
+}
+.fw-badge{
+  font-family:'DM Mono',monospace;font-size:7px;
+  letter-spacing:0.12em;text-transform:uppercase;
+  padding:5px 10px;border:1px solid var(--border);color:var(--t-ink4);
+  text-align:center;line-height:1.4;
+}
+
+/* ── PROPAS GROWTH PILLARS ── */
+.pillars-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border:1px solid var(--border);
+}
+.pillar{
+  padding:var(--s8) var(--s6);
+  border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+  transition:background var(--t-base);position:relative;overflow:hidden;
+}
+.pillar:nth-child(3n){border-right:none}
+.pillar:nth-last-child(-n+3){border-bottom:none}
+.pillar:hover{background:var(--gold-glow2)}
+.pillar::after{
+  content:'';position:absolute;top:0;left:0;width:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+  transition:width 0.45s;
+}
+.pillar:hover::after{width:100%}
+.pillar-code{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:var(--s4)}
+.pillar-icon{font-size:26px;display:block;margin-bottom:var(--s4)}
+.pillar-name{font-size:16px;font-weight:500;color:var(--t-ink);margin-bottom:10px;letter-spacing:-0.3px}
+.pillar-desc{font-size:12.5px;color:var(--t-ink3);line-height:1.7}
+.pillar-items{margin-top:var(--s4);display:flex;flex-direction:column;gap:5px}
+.pillar-item{font-size:11.5px;color:var(--t-ink4);padding-left:14px;position:relative;line-height:1.5}
+.pillar-item::before{content:'—';position:absolute;left:0;color:var(--gold2);opacity:0.5}
+
+/* ── TRUST SCORE ── */
+.trust-tiers{
+  display:grid;grid-template-columns:repeat(5,1fr);
+  border:1px solid var(--border);
+}
+.tt{
+  padding:var(--s5) var(--s4);text-align:center;
+  border-right:1px solid var(--border);
+  transition:background var(--t-fast);
+}
+.tt:last-child{border-right:none}
+.tt:hover{background:var(--gold-glow2)}
+.tt-score{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:700;color:var(--gold2);
+  letter-spacing:-0.5px;margin-bottom:5px;
+}
+.tt-name{font-size:12px;font-weight:500;color:var(--t-ink);margin-bottom:5px}
+.tt-range{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.1em;text-transform:uppercase;color:var(--t-ink4);margin-bottom:8px}
+.tt-desc{font-size:11.5px;color:var(--t-ink3);line-height:1.55}
+
+/* ── AI CAPABILITIES ── */
+.ai-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--border)}
+.ai-card{
+  padding:var(--s6) var(--s6);
+  border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+  transition:background var(--t-fast);
+}
+.ai-card:nth-child(2n){border-right:none}
+.ai-card:nth-last-child(-n+2){border-bottom:none}
+.ai-card:hover{background:var(--gold-glow2)}
+.ai-role{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}
+.ai-name{font-size:15px;font-weight:600;color:var(--t-ink);margin-bottom:8px;letter-spacing:-0.2px}
+.ai-caps{font-size:12.5px;color:var(--t-ink3);line-height:1.68;margin-bottom:12px}
+.ai-alert{
+  font-size:11.5px;color:var(--t-ink4);
+  padding:9px 12px;border-left:2px solid rgba(168,112,0,0.3);
+  background:var(--gold-glow2);line-height:1.55;
+}
+.ai-alert strong{color:var(--gold2);font-weight:500}
+
+/* ── BUILDING INTELLIGENCE ── */
+.iot-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
+.iot-card{
+  padding:var(--s5) var(--s4);
+  border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+  transition:background var(--t-fast);
+}
+.iot-card:nth-child(3n){border-right:none}
+.iot-card:nth-last-child(-n+3){border-bottom:none}
+.iot-card:hover{background:var(--gold-glow2)}
+.iot-code{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:5px}
+.iot-name{font-size:13px;font-weight:500;color:var(--t-ink);margin-bottom:5px}
+.iot-proto{font-family:'DM Mono',monospace;font-size:7px;color:var(--t-ink4);letter-spacing:0.06em;margin-bottom:7px}
+.iot-desc{font-size:11.5px;color:var(--t-ink3);line-height:1.55}
+.iot-tags{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.iot-tag{
+  font-family:'DM Mono',monospace;font-size:6.5px;letter-spacing:0.08em;text-transform:uppercase;
+  padding:3px 7px;border:1px solid rgba(168,112,0,0.15);color:var(--t-ink4);
+}
+
+/* ── PORTALS ── */
+.portals-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
+.portal{
+  padding:var(--s5) var(--s5);
+  border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+  transition:background var(--t-fast);
+}
+.portal:nth-child(3n){border-right:none}
+.portal:nth-last-child(-n+3){border-bottom:none}
+.portal:hover{background:var(--gold-glow2)}
+.portal-name{font-size:13.5px;font-weight:500;color:var(--t-ink);margin-bottom:3px}
+.portal-cat{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px}
+.portal-note{font-size:11.5px;color:var(--t-ink4);line-height:1.55}
+
+/* ── MARKET / NUMBERS ── */
+.market-nums{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);margin-bottom:var(--s12)}
+.mnum{
+  padding:var(--s6) var(--s5);border-right:1px solid var(--border);
+  text-align:center;transition:background var(--t-fast);
+}
+.mnum:last-child{border-right:none}
+.mnum:hover{background:var(--gold-glow2)}
+.mnum-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;font-weight:700;color:var(--gold2);
+  letter-spacing:-1px;line-height:1;margin-bottom:6px;
+}
+.mnum-lbl{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.16em;text-transform:uppercase;color:var(--t-ink4);margin-bottom:4px}
+.mnum-sub{font-size:11.5px;color:var(--t-ink3)}
+
+/* ── REVENUE STREAMS ── */
+.revenue-list{display:flex;flex-direction:column;gap:2px;border:1px solid var(--border)}
+.rvitem{
+  display:flex;align-items:stretch;
+  border-bottom:1px solid rgba(168,112,0,0.07);
+  transition:background var(--t-fast);
+}
+.rvitem:last-child{border-bottom:none}
+.rvitem:hover{background:var(--gold-glow2)}
+.rvi-n{
+  width:56px;flex-shrink:0;
+  font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--gold2);padding:16px var(--s4);
+  border-right:1px solid rgba(168,112,0,0.07);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+}
+.rvi-body{flex:1;padding:14px var(--s5)}
+.rvi-name{font-size:13px;font-weight:500;color:var(--t-ink);margin-bottom:4px}
+.rvi-desc{font-size:12px;color:var(--t-ink3);line-height:1.6}
+.rvi-price{
+  width:140px;flex-shrink:0;padding:14px var(--s4);
+  border-left:1px solid rgba(168,112,0,0.07);
+  display:flex;align-items:center;justify-content:center;
+}
+.rvi-tag{
+  font-family:'DM Mono',monospace;font-size:8px;letter-spacing:0.1em;text-transform:uppercase;
+  padding:5px 10px;border:1px solid var(--border);color:var(--gold2);text-align:center;
+}
+
+/* ── EXPANSION MAP ── */
+.expansion-list{display:flex;flex-direction:column;gap:2px;border:1px solid var(--border)}
+.exp-item{
+  display:flex;align-items:stretch;gap:0;
+  border-bottom:1px solid rgba(168,112,0,0.07);
+  transition:background var(--t-fast);
+}
+.exp-item:last-child{border-bottom:none}
+.exp-item:hover{background:var(--gold-glow2)}
+.exp-flag{width:56px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:22px;border-right:1px solid rgba(168,112,0,0.07);padding:14px}
+.exp-phase{width:100px;flex-shrink:0;border-right:1px solid rgba(168,112,0,0.07);padding:14px var(--s3);display:flex;align-items:center}
+.exp-phase-label{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold2)}
+.exp-body{flex:1;padding:14px var(--s5)}
+.exp-market{font-size:13px;font-weight:500;color:var(--t-ink);margin-bottom:3px}
+.exp-detail{font-size:11.5px;color:var(--t-ink3);line-height:1.55}
+.exp-timing{width:140px;flex-shrink:0;padding:14px var(--s4);border-left:1px solid rgba(168,112,0,0.07);display:flex;align-items:center;justify-content:flex-end}
+.exp-timing-txt{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.1em;text-transform:uppercase;color:var(--t-ink4);text-align:right}
+
+/* ── QUOTE ── */
+.quote-section{padding:80px var(--s12);text-align:center}
+.quote-inner{max-width:780px;margin:0 auto}
+.quote-mark{
+  font-family:'Cormorant Garamond',serif;font-size:80px;
+  color:var(--gold2);opacity:0.18;line-height:0.7;display:block;margin-bottom:var(--s6);
+}
+.quote-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(20px,2.5vw,30px);font-style:italic;font-weight:400;
+  color:var(--t-ink2);line-height:1.5;letter-spacing:-0.3px;margin-bottom:var(--s8);
+}
+.quote-text em{color:var(--gold2);font-style:normal}
+.quote-rule{width:36px;height:1px;background:var(--gold2);margin:0 auto var(--s4);opacity:0.4}
+.quote-attr{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--t-ink4)}
+
+/* ── CTA SECTION ── */
+#cta{
+  padding:var(--s32) var(--s12);
+  position:relative;overflow:hidden;
+}
+.cta-glow-1{position:absolute;bottom:-200px;right:-200px;width:700px;height:700px;pointer-events:none;background:radial-gradient(ellipse,rgba(168,112,0,0.1) 0%,transparent 65%)}
+.cta-glow-2{position:absolute;top:-100px;left:-150px;width:500px;height:500px;pointer-events:none;background:radial-gradient(ellipse,rgba(168,112,0,0.05) 0%,transparent 65%)}
+.cta-inner{max-width:680px;position:relative;z-index:1}
+.cta-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(36px,4.5vw,62px);font-weight:700;
+  letter-spacing:-1.5px;line-height:1.04;
+  color:var(--t-ink);margin-bottom:var(--s4);
+}
+.cta-title em{color:var(--gold2);font-style:italic}
+.cta-sub{font-size:15px;color:var(--t-ink3);line-height:1.75;margin-bottom:var(--s8);max-width:500px}
+.cta-form{display:flex;gap:0;max-width:480px;margin-bottom:12px}
+.cta-perks{display:flex;flex-wrap:wrap;gap:var(--s5);margin-top:var(--s8)}
+.cta-perk{display:flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--t-ink4)}
+.cta-perk::before{content:'✓';color:var(--gold2);border:1px solid rgba(168,112,0,0.25);width:15px;height:15px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0}
+
+/* ── FOOTER ── */
+footer{
+  border-top:1px solid var(--border2);background:#040201;
+  padding:var(--s12) var(--s12) var(--s8);
+}
+.footer-grid{
+  max-width:var(--max-w);margin:0 auto;
+  display:grid;grid-template-columns:240px 1fr 1fr 1fr 1fr;gap:var(--s10);
+  margin-bottom:var(--s10);
+}
+.footer-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:700;letter-spacing:-0.5px;
+  color:rgba(236,230,218,0.28);text-decoration:none;display:block;margin-bottom:var(--s3);
+}
+.footer-logo em{color:rgba(200,144,10,0.3);font-style:normal}
+.footer-tagline{font-size:12px;color:var(--t-ink4);line-height:1.65}
+.footer-col-ttl{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:var(--s4);opacity:0.8}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:7px}
+.footer-links a{font-size:12px;color:var(--t-ink4);text-decoration:none;transition:color var(--t-fast)}
+.footer-links a:hover{color:var(--t-ink2)}
+.footer-bottom{max-width:var(--max-w);margin:0 auto;border-top:1px solid rgba(255,255,255,0.04);padding-top:var(--s5);display:flex;align-items:center;justify-content:space-between}
+.footer-copy{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:0.12em;text-transform:uppercase;color:var(--t-ink4)}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — UX/UI BREAKPOINTS
+══════════════════════════════════════════ */
+
+/* ── TABLET: 768px–1100px ── */
+@media(max-width:1100px){
+  :root{--s12:32px}
+  #nav{padding:0 var(--s8)}
+  .nav-links{display:none}
+  .nav-hamburger{display:flex}
+  .nav-right .btn-ghost{display:none}
+
+  #hero{padding:calc(var(--nav-h) + 56px) var(--s8) 72px}
+  .hero-inner{grid-template-columns:1fr;gap:var(--s10)}
+  .hero-card{max-width:560px}
+  .hero-stats{grid-template-columns:repeat(2,1fr);row-gap:var(--s5)}
+  .hstat:nth-child(odd){border-right:1px solid var(--border2);padding-right:var(--s5)}
+  .hstat:nth-child(even){padding-left:var(--s5);border-right:none}
+
+  .section{padding:var(--s16) var(--s8)}
+
+  .problem-strip{grid-template-columns:1fr}
+  .ps-card{border-right:none;border-bottom:1px solid var(--border)}
+  .ps-card:last-child{border-bottom:none}
+
+  .layer-label{width:130px;padding:18px var(--s4)}
+
+  .roles-tabs{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .rtab{font-size:7.5px;padding:11px 14px}
+  .roles-panel.active{grid-template-columns:1fr}
+
+  .pbos-grid{grid-template-columns:1fr 1fr}
+  .pbos-card:nth-child(3n){border-right:1px solid var(--border)}
+  .pbos-card:nth-child(2n){border-right:none}
+
+  .pillars-grid{grid-template-columns:1fr 1fr}
+  .pillar:nth-child(3n){border-right:1px solid var(--border)}
+  .pillar:nth-child(2n){border-right:none}
+
+  .trust-tiers{grid-template-columns:repeat(3,1fr)}
+  .tt:nth-child(3n){border-right:none}
+  .tt:nth-child(-n+3){border-bottom:1px solid var(--border)}
+
+  .ai-grid{grid-template-columns:1fr}
+  .ai-card{border-right:none;border-bottom:1px solid var(--border)}
+  .ai-card:last-child{border-bottom:none}
+
+  .iot-grid{grid-template-columns:1fr 1fr}
+  .iot-card:nth-child(3n){border-right:1px solid var(--border)}
+  .iot-card:nth-child(2n){border-right:none}
+
+  .portals-grid{grid-template-columns:1fr 1fr}
+  .portal:nth-child(3n){border-right:1px solid var(--border)}
+  .portal:nth-child(2n){border-right:none}
+
+  .market-nums{grid-template-columns:1fr 1fr;gap:0}
+  .mnum:nth-child(2n){border-right:none}
+  .mnum:nth-child(-n+2){border-bottom:1px solid var(--border)}
+
+  .fw-tag{display:none}
+
+  .exp-flag{width:44px;padding:12px}
+  .exp-phase{display:none}
+  .exp-timing{width:100px}
+
+  .rvi-price{width:100px}
+
+  #cta{padding:var(--s20) var(--s8)}
+
+  footer{padding:var(--s10) var(--s8) var(--s6)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:var(--s8)}
+  .footer-brand{grid-column:1/-1}
+  .footer-bottom{flex-direction:column;gap:var(--s3);text-align:center}
+}
+
+/* ── MOBILE: ≤ 767px ── */
+@media(max-width:767px){
+  :root{--nav-h:56px;--s12:20px;--s8:24px}
+  #nav{padding:0 var(--s5)}
+  .nav-pill{display:none}
+  .nav-logo{font-size:20px}
+
+  #hero{padding:calc(var(--nav-h) + 44px) var(--s5) 56px}
+  .hero-title{font-size:40px;letter-spacing:-1.2px}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .hstat{padding:0}
+  .hstat:nth-child(odd){padding-right:var(--s4);border-right:1px solid var(--border2)}
+  .hstat:nth-child(even){padding-left:var(--s4)}
+
+  .section{padding:var(--s12) var(--s5)}
+
+  .layer-label{width:100px}
+  .layer-mods{padding:12px var(--s3);gap:4px}
+  .lmod{padding:4px 7px;font-size:7px}
+
+  .roles-panel.active{grid-template-columns:1fr;padding:var(--s5)}
+  .rp-modules{grid-template-columns:1fr}
+
+  .pbos-grid{grid-template-columns:1fr}
+  .pbos-card{border-right:none;border-bottom:1px solid var(--border)}
+  .pbos-card:last-child{border-bottom:none}
+
+  .pillars-grid{grid-template-columns:1fr}
+  .pillar{border-right:none;border-bottom:1px solid var(--border)}
+  .pillar:last-child{border-bottom:none}
+
+  .trust-tiers{grid-template-columns:1fr 1fr}
+  .tt:nth-child(2n){border-right:none}
+  .tt{border-bottom:1px solid var(--border)}
+
+  .iot-grid{grid-template-columns:1fr}
+  .iot-card{border-right:none;border-bottom:1px solid var(--border)}
+  .iot-card:last-child{border-bottom:none}
+
+  .portals-grid{grid-template-columns:1fr}
+  .portal{border-right:none;border-bottom:1px solid var(--border)}
+  .portal:last-child{border-bottom:none}
+
+  .market-nums{grid-template-columns:1fr 1fr}
+  .mnum:nth-child(2n){border-right:none}
+  .mnum{border-bottom:1px solid var(--border)}
+  .mnum:last-child,.mnum:nth-last-child(2){border-bottom:none}
+
+  .revenue-list .rvi-price{display:none}
+  .exp-timing{display:none}
+  .fw-tag{display:none}
+
+  .cta-form{flex-direction:column}
+  .email-sub{border:1px solid var(--gold)}
+  .cta-perks{gap:var(--s3)}
+
+  footer{padding:var(--s8) var(--s5) var(--s5)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:var(--s6)}
+  .footer-brand{grid-column:1/-1}
+
+  .quote-section{padding:56px var(--s5)}
+  #cta{padding:var(--s16) var(--s5)}
+}
+
+/* ── SMALL MOBILE: ≤ 420px ── */
+@media(max-width:420px){
+  .hero-title{font-size:34px}
+  .email-row{flex-direction:column}
+  .email-input{border-right:1px solid var(--border);border-bottom:none}
+  .email-sub{width:100%}
+  .trust-tiers{grid-template-columns:1fr}
+  .tt{border-right:none;border-bottom:1px solid var(--border)}
+  .footer-grid{grid-template-columns:1fr}
+}
+
+/* ── FOCUS / ACCESSIBILITY ── */
+a:focus-visible,button:focus-visible,input:focus-visible{
+  outline:2px solid var(--gold2);outline-offset:2px;
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="PropOS — Home">Prop<em>OS</em></a>
+  <span class="nav-pill" aria-label="Status: Early Access 2025">Early Access 2025</span>
+  <ul class="nav-links" role="list">
+    <li><a href="#platform">Platform</a></li>
+    <li><a href="#for-you">For Your Role</a></li>
+    <li><a href="#providers">Providers</a></li>
+    <li><a href="#ai-layer">AI Layer</a></li>
+    <li><a href="#growth">Growth OS</a></li>
+    <li><a href="#trust">Trust Scores</a></li>
+    <li><a href="#market">Market</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#cta" class="btn btn-ghost">Sign In</a>
+    <a href="#cta" class="btn btn-gold">Join Waitlist</a>
+    <button class="nav-hamburger" id="ham" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav id="nav-drawer" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+  <a href="#platform">Platform Overview</a>
+  <a href="#for-you">For Your Role</a>
+  <a href="#providers">Provider Business OS</a>
+  <a href="#ai-layer">AI Intelligence Layer</a>
+  <a href="#growth">Growth & PropAS</a>
+  <a href="#trust">Trust Score Network</a>
+  <a href="#market">Market Opportunity</a>
+  <a href="#cta" class="drawer-cta btn btn-gold">Join Waitlist →</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero" aria-labelledby="h1">
+  <div class="hero-radial" aria-hidden="true"></div>
+  <div class="hero-radial-2" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <!-- Left -->
+    <div>
+      <div class="hero-eyebrow r">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span>Global Launch · 2025 · Series A</span>
+      </div>
+      <h1 class="hero-title r d1" id="h1">
+        The Operating<br>System for<br>
+        <em>Property.</em>
+        <span class="ghost">Finally.</span>
+      </h1>
+      <p class="hero-desc r d2">
+        PropOS unifies <strong>every participant, process, transaction,</strong> and intelligence layer in the global property market — from land acquisition through construction, tenancy, management, service delivery, provider growth, and professional certification. <strong>13 modules. Every role. One platform.</strong>
+      </p>
+      <div class="hero-stats r d3" role="list" aria-label="Platform statistics">
+        <div class="hstat" role="listitem"><div class="hstat-num">13<em>+</em></div><div class="hstat-lbl">Platform Modules</div></div>
+        <div class="hstat" role="listitem"><div class="hstat-num">18<em>+</em></div><div class="hstat-lbl">User Role Types</div></div>
+        <div class="hstat" role="listitem"><div class="hstat-num">50<em>+</em></div><div class="hstat-lbl">Provider Categories</div></div>
+        <div class="hstat" role="listitem"><div class="hstat-num">12</div><div class="hstat-lbl">AI Assistants</div></div>
+      </div>
+    </div>
+    <!-- Right: card -->
+    <div class="r d2">
+      <div class="hero-card" role="complementary" aria-label="Early access signup">
+        <div class="card-eyebrow"><span class="live-dot" aria-hidden="true"></span>Early Access — Limited Availability</div>
+        <h2 class="card-headline">Be first inside the new property OS.</h2>
+        <p class="card-body">Priority access, locked-in launch pricing, and a dedicated onboarding session. Open to property professionals, contractors, developers, and investors.</p>
+        <div class="email-group">
+          <form id="hero-form" onsubmit="handleSubmit(event,'hero')" novalidate>
+            <div class="email-row">
+              <label for="hero-email" class="sr-only">Email address</label>
+              <input class="email-input" type="email" id="hero-email" placeholder="your@email.com" required autocomplete="email">
+              <button class="email-sub" type="submit">Get Early Access</button>
+            </div>
+          </form>
+          <p class="form-note">No spam · No card required · Unsubscribe anytime</p>
+          <div class="form-success" id="hero-success" role="alert" aria-live="polite">
+            <div class="success-chk" aria-hidden="true">✓</div>
+            <span>You're on the list — we'll be in touch before launch.</span>
+          </div>
+        </div>
+        <div class="card-perks" role="list">
+          <div class="cperk" role="listitem">Priority platform access at launch</div>
+          <div class="cperk" role="listitem">Launch pricing locked — save up to 40%</div>
+          <div class="cperk" role="listitem">Dedicated onboarding session</div>
+          <div class="cperk" role="listitem">PropAS Academy early enrolment</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROBLEM ══ -->
+<section class="section section--alt" aria-labelledby="prob-h">
+  <div class="container">
+    <div class="eyebrow r">The Industry Problem</div>
+    <h2 class="sec-title r d1" id="prob-h">A £326 trillion market<br>running on <em>fragmented chaos.</em></h2>
+    <p class="sec-lead r d2">Real estate is the world's largest asset class — yet less than 5% of property transactions and management workflows are fully digitised. The infrastructure was never built. Until now.</p>
+    <div class="problem-strip r d3">
+      <article class="ps-card">
+        <div class="ps-num">Problem 01</div>
+        <span class="ps-icon" aria-hidden="true">⬡</span>
+        <h3 class="ps-title">Siloed Roles, Zero Shared Data</h3>
+        <p class="ps-desc">Landlords, agents, tenants, contractors, lawyers, accountants — each in disconnected tools with no shared source of truth. A single property can involve 8–12 separate systems. Every handoff is a point of friction and data loss.</p>
+      </article>
+      <article class="ps-card">
+        <div class="ps-num">Problem 02</div>
+        <span class="ps-icon" aria-hidden="true">⬡</span>
+        <h3 class="ps-title">No Trust or Verification Layer</h3>
+        <p class="ps-desc">Unlike financial services (credit scores) or transport (driver ratings), property has no universal trust system. A rogue contractor re-enters under a new name. A bad tenant disappears. This costs the UK economy an estimated £2.7 billion annually in disputes and remediation.</p>
+      </article>
+      <article class="ps-card">
+        <div class="ps-num">Problem 03</div>
+        <span class="ps-icon" aria-hidden="true">⬡</span>
+        <h3 class="ps-title">50+ Provider Categories Without a Business OS</h3>
+        <p class="ps-desc">Tradespeople, engineers, suppliers, transporters, estate agents, lawyers, and accountants each operate in professional silos — no shared data, no unified business intelligence, no certification ecosystem, and no channel to market at scale.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LAYER STACK ══ -->
+<section class="section" id="platform" aria-labelledby="platform-h">
+  <div class="container">
+    <div class="eyebrow r">Platform Architecture</div>
+    <h2 class="sec-title r d1" id="platform-h">Five interconnected layers.<br><em>Zero gaps.</em></h2>
+    <p class="sec-lead r d2">PropOS is structured as a complete five-layer stack — each layer addressing a distinct dimension of global property while sharing a common data model, trust infrastructure, and AI intelligence across all 13 modules.</p>
+    <div class="layer-stack r d3" role="list" aria-label="Platform architecture">
+      <div class="layer-row" role="listitem"><div class="layer-label"><div class="ll-code">Layer 01</div><div class="ll-name">Data Layer</div></div><div class="layer-mods"><span class="lmod">Property Taxonomy</span><span class="lmod">Ownership Architecture</span><span class="lmod">Property Registry</span><span class="lmod">Transaction Ledger</span><span class="lmod">Market Intelligence</span><span class="lmod">Compliance Engine</span><span class="lmod">Jurisdiction Frameworks</span></div></div>
+      <div class="layer-row" role="listitem"><div class="layer-label"><div class="ll-code">Layer 02</div><div class="ll-name">User Layer</div></div><div class="layer-mods"><span class="lmod">Home Owners</span><span class="lmod">Tenants</span><span class="lmod">Agents & Brokers</span><span class="lmod">Property Developers</span><span class="lmod">Property Managers</span><span class="lmod">Legal & Finance</span><span class="lmod">Government Bodies</span><span class="lmod">Buyers & Applicants</span></div></div>
+      <div class="layer-row" role="listitem"><div class="layer-label"><div class="ll-code">Layer 03</div><div class="ll-name">Intelligence Layer</div></div><div class="layer-mods"><span class="lmod">AI Assistant ×12</span><span class="lmod">Building Intelligence OS</span><span class="lmod">18+ IoT Integrations</span><span class="lmod">Construction Mgmt</span><span class="lmod">Channel Distribution</span><span class="lmod">Predictive Analytics</span><span class="lmod">Compliance Automation</span></div></div>
+      <div class="layer-row" role="listitem"><div class="layer-label"><div class="ll-code">Layer 04</div><div class="ll-name">Provider Layer</div></div><div class="layer-mods"><span class="lmod">Contractors & Trades</span><span class="lmod">Engineers</span><span class="lmod">Suppliers</span><span class="lmod">Transporters</span><span class="lmod">Provider Business OS</span><span class="lmod">Trust & Reputation</span><span class="lmod">Credential Network</span><span class="lmod">Marketplace Matching</span></div></div>
+      <div class="layer-row" role="listitem"><div class="layer-label"><div class="ll-code">Layer 05</div><div class="ll-name">Growth Layer</div></div><div class="layer-mods"><span class="lmod">PropOS Academy</span><span class="lmod">PropAS Certification</span><span class="lmod">Marketing Studio</span><span class="lmod">Website Builder</span><span class="lmod">Social Media Hub</span><span class="lmod">Business Growth AI</span><span class="lmod">Blockchain Credentials</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ USER ROLES TABBED ══ -->
+<section class="section section--alt" id="for-you" aria-labelledby="roles-h">
+  <div class="container">
+    <div class="eyebrow r">Built For Every Role</div>
+    <h2 class="sec-title r d1" id="roles-h">How PropOS works<br><em>for you.</em></h2>
+    <p class="sec-lead r d2">PropOS serves 18+ user archetypes across 5 domains — each with a purpose-built portal, dedicated AI assistant, and bespoke workflows. Select your role to see exactly how the platform works for you.</p>
+
+    <div class="r d3">
+      <div class="roles-tabs" role="tablist" aria-label="User roles">
+        <div class="rtab active" role="tab" aria-selected="true" aria-controls="tab-owner" id="t-owner" tabindex="0" onclick="switchRole('owner')">🏡 Landlord</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-tenant" id="t-tenant" tabindex="-1" onclick="switchRole('tenant')">🛋️ Tenant</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-agent" id="t-agent" tabindex="-1" onclick="switchRole('agent')">🤝 Agent</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-dev" id="t-dev" tabindex="-1" onclick="switchRole('dev')">🏗️ Developer</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-mgr" id="t-mgr" tabindex="-1" onclick="switchRole('mgr')">🏢 Property Mgr</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-law" id="t-law" tabindex="-1" onclick="switchRole('law')">⚖️ Lawyer</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-acc" id="t-acc" tabindex="-1" onclick="switchRole('acc')">💰 Accountant</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-buyer" id="t-buyer" tabindex="-1" onclick="switchRole('buyer')">🔑 Buyer</div>
+        <div class="rtab" role="tab" aria-selected="false" aria-controls="tab-gov" id="t-gov" tabindex="-1" onclick="switchRole('gov')">🏛️ Government</div>
+      </div>
+
+      <!-- LANDLORD / HOME OWNER -->
+      <div class="roles-panel active" id="tab-owner" role="tabpanel" aria-labelledby="t-owner">
+        <div class="rp-left">
+          <div class="rp-code">USR·OWN — Domain A · Property Principals</div>
+          <h3 class="rp-title">Landlord &amp; Property Investor</h3>
+          <p class="rp-tagline">Manage your portfolio with full intelligence — whether you're self-managing, using an agency, running short-lets, or investing internationally.</p>
+          <p class="rp-desc">PropOS gives landlords and property investors a single dashboard for every aspect of their portfolio — finances, compliance, tenancy, maintenance, and resale. One property or fifty, PropOS adapts to your management style.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Register your property</strong> with physical type code (RES·FLT, COM·OFF etc.) and ownership structure (freehold/leasehold/commonhold) — the platform auto-activates the correct compliance modules, workflows, and jurisdiction rules for your asset.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>Choose your management mode:</strong> self-managed, agency-managed (scoped access), short-let (calendar sync + 90-night cap), social/council lease, or vacant/development. Each mode shapes your full dashboard experience.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>Track all finances in one ledger</strong> — rent receipts, expense categorisation, service charge tracking, and bank reconciliation via Open Banking. Xero/QuickBooks/Sage integration included.</div></div>
+            <div class="rpstep"><div class="rpstep-n">04</div><div class="rpstep-t"><strong>Manage compliance certificates</strong> — gas safety, electrical EICR, EPC, fire, LOLER — with automated alerts at 30/14/7 days before expiry. Never miss a legal deadline.</div></div>
+            <div class="rpstep"><div class="rpstep-n">05</div><div class="rpstep-t"><strong>Approve maintenance and contractors</strong> directly from your phone. Set approval thresholds (e.g. works over £500), view contractor trust scores, and sign off invoices with an audit trail.</div></div>
+          </div>
+          <div class="rp-ai">
+            <div class="rp-ai-lbl">🧠 AI: Portfolio Intelligence AI</div>
+            <p class="rp-ai-text">High-ROI postcode identification, yield comparison by city, gentrification scoring, CGT liability modelling, SDLT optimisation, Ltd company transfer modelling. Proactive alerts when yield drops or income approaches a tax threshold.</p>
+          </div>
+          <div class="rp-tags"><span class="rptag">Rent Tracking</span><span class="rptag">Compliance Alerts</span><span class="rptag">Maintenance Approvals</span><span class="rptag">Short-Let Mgmt</span><span class="rptag">Portfolio Analytics</span><span class="rptag">Tax Planning</span><span class="rptag">Multi-Agency</span></div>
+        </div>
+        <div class="rp-right">
+          <h4>Key modules included in your portal</h4>
+          <div class="rp-modules">
+            <div class="rpm"><div class="rpm-name">Ownership OS</div><div class="rpm-desc">Multi-jurisdiction ownership entity management with 5 management modes</div></div>
+            <div class="rpm"><div class="rpm-name">Tenancy Manager</div><div class="rpm-desc">AST creation, rent tracking, deposit protection, renewal workflows</div></div>
+            <div class="rpm"><div class="rpm-name">Finance Ledger</div><div class="rpm-desc">Income/expense tracking, bank reconciliation, accountant read-access</div></div>
+            <div class="rpm"><div class="rpm-name">Compliance Engine</div><div class="rpm-desc">Certificate tracking, legal deadline alerts, EPC compliance, HHSRS</div></div>
+            <div class="rpm"><div class="rpm-name">Maintenance Hub</div><div class="rpm-desc">Work order approval, contractor dispatch, cost tracking, invoices</div></div>
+            <div class="rpm"><div class="rpm-name">Portfolio AI</div><div class="rpm-desc">Yield analysis, CGT/SDLT modelling, Ltd company planning</div></div>
+            <div class="rpm"><div class="rpm-name">Channel Publisher</div><div class="rpm-desc">Publish to Rightmove, Zoopla, Airbnb, Booking.com in one click</div></div>
+            <div class="rpm"><div class="rpm-name">Trust Network</div><div class="rpm-desc">Verified contractor trust scores, tenant references, bidirectional reviews</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TENANT -->
+      <div class="roles-panel" id="tab-tenant" role="tabpanel" aria-labelledby="t-tenant">
+        <div class="rp-left">
+          <div class="rp-code">USR·TEN — Domain B · Occupiers</div>
+          <h3 class="rp-title">Tenant</h3>
+          <p class="rp-tagline">Understand your rights, pay rent, report issues, and manage your tenancy — all from one transparent portal.</p>
+          <p class="rp-desc">PropOS gives tenants a transparent, stress-free rental experience. No more chasing landlords via email or guessing your legal rights. Residential, commercial, student, short-let, and social housing tenants all supported.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Access your tenancy agreement in plain English</strong> — AI breaks down every clause, explains your rights around repairs, rent increases, landlord access, and statutory notices (S21, S8).</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>Pay rent and manage payments</strong> via direct debit, Open Banking, or card — automatic receipts, full rent history, and proactive arrears reminders.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>Report maintenance issues with photos</strong> — AI diagnoses the fault category, drafts the formal request, and tracks the contractor job from dispatch through to completion and sign-off.</div></div>
+            <div class="rpstep"><div class="rpstep-n">04</div><div class="rpstep-t"><strong>Deposit protection & end-of-tenancy</strong> — confirmation of deposit registration, dispute support if deductions are made, and move-out checklist with photo evidence.</div></div>
+          </div>
+          <div class="rp-ai">
+            <div class="rp-ai-lbl">🧠 AI: Tenancy Assistant AI</div>
+            <p class="rp-ai-text">Clause-by-clause explanation in plain English, rights around repairs and landlord entry, deposit deduction rules, S21/S8 guidance, maintenance request drafting from photos. Reminders 3 days before rent is due. Renewal alerts.</p>
+          </div>
+          <div class="rp-tags"><span class="rptag">Rent Payments</span><span class="rptag">Agreement AI</span><span class="rptag">Maintenance</span><span class="rptag">Deposit</span><span class="rptag">Rights Guidance</span><span class="rptag">Move-Out</span></div>
+        </div>
+        <div class="rp-right">
+          <h4>Tenant portal modules</h4>
+          <div class="rp-modules">
+            <div class="rpm"><div class="rpm-name">My Tenancy</div><div class="rpm-desc">Agreement access, notice tracking, renewal management</div></div>
+            <div class="rpm"><div class="rpm-name">Rent & Payments</div><div class="rpm-desc">Payment history, receipts, direct debit, arrears prevention</div></div>
+            <div class="rpm"><div class="rpm-name">Maintenance</div><div class="rpm-desc">Issue reporting, photo upload, job tracking, sign-off</div></div>
+            <div class="rpm"><div class="rpm-name">Deposit Manager</div><div class="rpm-desc">Protection confirmation, dispute process, deduction challenge</div></div>
+            <div class="rpm"><div class="rpm-name">AI Assistant</div><div class="rpm-desc">Rights guidance, lease explanation, communication drafts</div></div>
+            <div class="rpm"><div class="rpm-name">Messaging</div><div class="rpm-desc">Secure channel to landlord, agent, and manager</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AGENT -->
+      <div class="roles-panel" id="tab-agent" role="tabpanel" aria-labelledby="t-agent">
+        <div class="rp-left">
+          <div class="rp-code">USR·AGT — Domain A · Property Principals</div>
+          <h3 class="rp-title">Estate &amp; Letting Agent</h3>
+          <p class="rp-tagline">Win more instructions, publish on every portal in seconds, and manage your full sales and lettings pipeline from lead to completion.</p>
+          <p class="rp-desc">PropOS replaces your fragmented CRM, portal upload tools, and compliance spreadsheets. Sales agents, lettings agents, commercial agents — all supported with branch-level P&L and AI at every step.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Upload a property once</strong> — PropOS simultaneously formats and publishes the listing to Rightmove, Zoopla, OnTheMarket, OpenRent, Airbnb, Booking.com, international portals, and social channels in under 60 seconds.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>Generate AI-written listings</strong> — auto-write property descriptions from key details and photos, optimise for portal-specific SEO keywords, and ensure EPC-compliant copy. Listing Performance Engine tracks days-on-market and conversion rates.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>Manage your full CRM pipeline</strong> — leads auto-import from all portals, viewing scheduling, offer tracking, and progression through to exchange and legal completion.</div></div>
+            <div class="rpstep"><div class="rpstep-n">04</div><div class="rpstep-t"><strong>Screen tenants and buyers with AI</strong> — income inconsistency detection, credit risk flags, fraud screening, and Right to Rent compliance — before you proceed to referencing.</div></div>
+            <div class="rpstep"><div class="rpstep-n">05</div><div class="rpstep-t"><strong>Commission and branch P&L tracking</strong> — automated commission calculations, branch performance reporting, and multi-branch management with HR tools for your team.</div></div>
+          </div>
+          <div class="rp-ai">
+            <div class="rp-ai-lbl">🧠 AI: Sales &amp; Lettings Copilot</div>
+            <p class="rp-ai-text">Auto-generates property descriptions and portal SEO, optimal pricing from comparables, fraud tenant screening, income verification anomaly detection. Alerts when a listing exceeds 21 days without an offer and suggests price adjustments based on market movement.</p>
+          </div>
+          <div class="rp-tags"><span class="rptag">Multi-Portal Publish</span><span class="rptag">CRM Pipeline</span><span class="rptag">AI Listing Writer</span><span class="rptag">Tenant Screening</span><span class="rptag">Commission Tracking</span><span class="rptag">Branch Mgmt</span></div>
+        </div>
+        <div class="rp-right">
+          <h4>Agent portal modules</h4>
+          <div class="rp-modules">
+            <div class="rpm"><div class="rpm-name">Listing Manager</div><div class="rpm-desc">One upload → all portals live in 60 seconds</div></div>
+            <div class="rpm"><div class="rpm-name">CRM & Pipeline</div><div class="rpm-desc">Lead management, viewing scheduler, offer tracking</div></div>
+            <div class="rpm"><div class="rpm-name">Listing Performance</div><div class="rpm-desc">Views, enquiry rate, days-to-let, price reduction AI</div></div>
+            <div class="rpm"><div class="rpm-name">Tenant Screening</div><div class="rpm-desc">AI fraud detection, income verification, Right to Rent</div></div>
+            <div class="rpm"><div class="rpm-name">Commission Manager</div><div class="rpm-desc">Automated fee calculation, branch P&L, split tracking</div></div>
+            <div class="rpm"><div class="rpm-name">Compliance Tools</div><div class="rpm-desc">EPC compliance, AML/KYC, ARLA requirements</div></div>
+            <div class="rpm"><div class="rpm-name">AI Copilot</div><div class="rpm-desc">Listing writer, pricing intelligence, market alerts</div></div>
+            <div class="rpm"><div class="rpm-name">Branch Management</div><div class="rpm-desc">HR, team targets, cross-branch reporting</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEVELOPER -->
+      <div class="roles-panel" id="tab-dev" role="tabpanel" aria-labelledby="t-dev">
+        <div class="rp-left">
+          <div class="rp-code">USR·DEV — Domain A · Property Principals</div>
+          <h3 class="rp-title">Property Developer</h3>
+          <p class="rp-tagline">Manage the full development lifecycle — from land acquisition through planning, construction, and sales handover — with a live development appraisal that updates in real time.</p>
+          <p class="rp-desc">PropOS handles all 8 lifecycle stages of development — 24+ discipline-specific sub-modules, 30+ professional roles on one project — with a live appraisal that is not a spreadsheet but a real-time profit tracker.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Land &amp; acquisition</strong> — residual land value calculations, conditional contracts tracking, subject-to-planning clause management, overage provision tracking, and SDLT calculation.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>Planning &amp; consents</strong> — S106 agreement tracking, CIL liabilities, condition discharge programme management, and 8/13-week decision target monitoring.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>Construction management</strong> — master programme (Gantt/P6), 3-week lookaheads, critical path monitoring, variation order log, and monthly QS valuations linked to drawdown approval.</div></div>
+            <div class="rpstep"><div class="rpstep-n">04</div><div class="rpstep-t"><strong>Live development appraisal</strong> — GDV vs cost variance alerts, profit-on-cost tracking, cashflow forecast vs actuals, and drawdown requests all automatically linked to live financial data.</div></div>
+            <div class="rpstep"><div class="rpstep-n">05</div><div class="rpstep-t"><strong>CDM &amp; H&S compliance</strong> — F10 notifications, Construction Phase Plan, RAMS tracking, CSCS verification linked to access control, and Building Safety Act compliance.</div></div>
+          </div>
+          <div class="rp-ai">
+            <div class="rp-ai-lbl">🧠 AI: Development Intelligence AI</div>
+            <p class="rp-ai-text">Live appraisal tracking, VO impact analysis, cashflow forecast vs actuals, S106/CIL payment scheduling, VAT reclaim management, and SDLT scenario modelling. Your live profit position always visible.</p>
+          </div>
+          <div class="rp-tags"><span class="rptag">Live Appraisal</span><span class="rptag">Planning Tracker</span><span class="rptag">Construction Mgmt</span><span class="rptag">QS Integration</span><span class="rptag">CDM Compliance</span><span class="rptag">Sales Pipeline</span></div>
+        </div>
+        <div class="rp-right">
+          <h4>Developer portal modules</h4>
+          <div class="rp-modules">
+            <div class="rpm"><div class="rpm-name">Land Acquisition</div><div class="rpm-desc">Option agreements, conditional contracts, overage</div></div>
+            <div class="rpm"><div class="rpm-name">Planning Manager</div><div class="rpm-desc">S106, CIL, conditions, consents tracking</div></div>
+            <div class="rpm"><div class="rpm-name">Live Appraisal</div><div class="rpm-desc">Real-time GDV, cost, profit-on-cost</div></div>
+            <div class="rpm"><div class="rpm-name">Construction OS</div><div class="rpm-desc">Programme, lookaheads, QS valuations, VOs</div></div>
+            <div class="rpm"><div class="rpm-name">CDM & H&S</div><div class="rpm-desc">F10, CPP, RAMS, toolbox talks, incidents</div></div>
+            <div class="rpm"><div class="rpm-name">Dev Finance</div><div class="rpm-desc">Drawdown requests, lender reports, retention</div></div>
+            <div class="rpm"><div class="rpm-name">Sales Pipeline</div><div class="rpm-desc">Reservations, conveyancing, Help to Buy, BTR</div></div>
+            <div class="rpm"><div class="rpm-name">Handover OS</div><div class="rpm-desc">Snagging, NHBC warranty, title transfer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROPERTY MANAGER -->
+      <div class="roles-panel" id="tab-mgr" role="tabpanel" aria-labelledby="t-mgr">
+        <div class="rp-left">
+          <div class="rp-code">USR·MGR — Domain A · Property Principals</div>
+          <h3 class="rp-title">Property Manager</h3>
+          <p class="rp-tagline">Manage large residential or commercial portfolios with AI-driven compliance, automated contractor dispatch, and service charge management.</p>
+          <p class="rp-desc">PropOS gives block managers, facilities managers, and residential property managers a unified command centre — surfacing compliance priorities across hundreds of properties and automating routine workflows. Supported types: Residential, Commercial, Block Management, Facilities Management.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Compliance deadline management</strong> — gas safety, EICR, EPC, LOLER, and fire safety certificates. Automated alerts at 30, 14, and 7 days before expiry across your full portfolio.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>AI contractor dispatch</strong> — automatically identify the nearest, highest-rated, and correctly certified contractor for each job type and dispatch the work order. Contractor SLA breach alerts triggered automatically.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>Service charge management</strong> — S20 consultation workflows, annual budgeting, actual vs budget variance tracking, and service charge accounting for leasehold blocks.</div></div>
+            <div class="rpstep"><div class="rpstep-n">04</div><div class="rpstep-t"><strong>Automated rent arrears escalation</strong> — from overdue notice through to formal proceedings, with AI-drafted communications and audit trail at every stage.</div></div>
+          </div>
+          <div class="rp-ai">
+            <div class="rp-ai-lbl">🧠 AI: Operations Command Centre</div>
+            <p class="rp-ai-text">Priority surfacing across large portfolios, predictive maintenance from IoT sensor data, AI contractor dispatch by nearest/rated/certified, automated rent arrears escalation, and AI-drafted tenant communications. Compliance cert expiry and SLA breach alerts.</p>
+          </div>
+          <div class="rp-tags"><span class="rptag">Portfolio Dashboard</span><span class="rptag">Compliance Engine</span><span class="rptag">Service Charge</span><span class="rptag">Arrears Workflow</span><span class="rptag">IoT Integration</span><span class="rptag">Contractor Dispatch</span></div>
+        </div>
+        <div class="rp-right">
+          <h4>Property manager modules</h4>
+          <div class="rp-modules">
+            <div class="rpm"><div class="rpm-name">Portfolio Command</div><div class="rpm-desc">Compliance priority dashboard across all properties</div></div>
+            <div class="rpm"><div class="rpm-name">AI Dispatch</div><div class="rpm-desc">Nearest/rated/certified contractor auto-matching</div></div>
+            <div class="rpm"><div class="rpm-name">Service Charge OS</div><div class="rpm-desc">S20 consultation, budgeting, apportionment</div></div>
+            <div class="rpm"><div class="rpm-name">Arrears Manager</div><div class="rpm-desc">Automated escalation, draft notices, proceedings</div></div>
+            <div class="rpm"><div class="rpm-name">Building Intel</div><div class="rpm-desc">IoT integration, predictive maintenance, sensors</div></div>
+            <div class="rpm"><div class="rpm-name">Compliance Certs</div><div class="rpm-desc">Tracking, renewal, expiry alerts, LOLER, EPC</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAWYER -->
+      <div class="roles-panel" id="tab-law" role="tabpanel" aria-labelledby="t-law">
+        <div class="rp-left">
+          <div class="rp-code">SVC·LAW — Domain D · Finance &amp; Legal</div>
+          <h3 class="rp-title">Property Lawyer &amp; Solicitor</h3>
+          <p class="rp-tagline">AI-powered legal assistance, matter management, and e-signature workflows for conveyancing, lease work, and property disputes.</p>
+          <p class="rp-desc">PropOS gives property lawyers a matter management system deeply integrated with the property ecosystem — title documents, tenancy records, and transaction timelines in one place. Supported: Conveyancers, Lease Lawyers, Dispute Lawyers, Planning Lawyers, Corporate Real Estate.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Open matters per transaction</strong> — linked directly to the property record, ownership entity, and all relevant parties. AML/KYC automated source of funds checks and PEP/sanctions screening at matter opening.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>E-signatures for exchange &amp; completion</strong> — compliant digital signing with full audit trail, SRA number verification, and timestamp. All documents in one matter file.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>AI legal research &amp; drafting</strong> — draft lease clauses, S20 notices, conveyancing checklists, identify title issues from uploaded Land Registry documents, and cross-jurisdiction guidance.</div></div>
+            <div class="rpstep"><div class="rpstep-n">04</div><div class="rpstep-t"><strong>Transaction risk monitoring</strong> — automated alerts when exchange deadline is at risk, title register anomaly flagging, and AML risk assessment per client auto-generated.</div></div>
+          </div>
+          <div class="rp-ai">
+            <div class="rp-ai-lbl">🧠 AI: Legal Intelligence Engine</div>
+            <p class="rp-ai-text">Draft lease clauses, S20 notices, conveyancing checklists. Research L&T Act 1954, identify title issues, cross-jurisdiction guidance (England, Scotland, UAE). AML/KYC engine. Alerts when exchange deadline is at risk or title register shows anomalies.</p>
+          </div>
+          <div class="rp-tags"><span class="rptag">Matter Management</span><span class="rptag">AML/KYC Engine</span><span class="rptag">E-Signatures</span><span class="rptag">AI Legal Research</span><span class="rptag">Title Analysis</span><span class="rptag">Conveyancing</span></div>
+        </div>
+        <div class="rp-right">
+          <h4>Lawyer portal modules</h4>
+          <div class="rp-modules">
+            <div class="rpm"><div class="rpm-name">Matter Manager</div><div class="rpm-desc">Case files, parties, deadlines, milestones</div></div>
+            <div class="rpm"><div class="rpm-name">AML/KYC Engine</div><div class="rpm-desc">Source of funds, PEP/sanctions, SRA compliance</div></div>
+            <div class="rpm"><div class="rpm-name">E-Signatures</div><div class="rpm-desc">Exchange, completion, audit trail, SRA verification</div></div>
+            <div class="rpm"><div class="rpm-name">Legal AI</div><div class="rpm-desc">Lease drafting, title analysis, research assistance</div></div>
+            <div class="rpm"><div class="rpm-name">Client CRM</div><div class="rpm-desc">Onboarding, identity verification, matter history</div></div>
+            <div class="rpm"><div class="rpm-name">Billing & WIP</div><div class="rpm-desc">Time recording, disbursements, invoice generation</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCOUNTANT -->
+      <div class="roles-panel" id="tab-acc" role="tabpanel" aria-labelledby="t-acc">
+        <div class="rp-left">
+          <div class="rp-code">SVC·ACC — Domain D · Finance &amp; Legal</div>
+          <h3 class="rp-title">Property Accountant</h3>
+          <p class="rp-tagline">Query client portfolios in natural language, automate variance analysis, and optimise property tax positions — across all your clients from one multi-client view.</p>
+          <p class="rp-desc">PropOS integrates directly with your clients' financial records — giving property accountants multi-client dashboard access with scoped read/export permissions, accounting software integration, and AI-powered financial intelligence. Tax Deadline Engine tracks every client's SA return, CT600, VAT, and ATED deadline in one calendar.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Multi-client dashboard</strong> — access all assigned client portfolios in one view with scoped permissions per client. Xero, QuickBooks, and Sage configured per client.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>Natural language financial queries</strong> — ask "What is Client A's actual vs budget variance for Q3?" and receive an instant, cited answer from live ledger data.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>Tax planning intelligence</strong> — Section 24 modelling, SDLT scenarios, CGT annual exemption planning, FHL eligibility checks, and incorporation relief modelling. Proactive alerts when clients approach thresholds.</div></div>
+          </div>
+          <div class="rp-ai">
+            <div class="rp-ai-lbl">🧠 AI: Finance Intelligence AI</div>
+            <p class="rp-ai-text">Natural language ledger queries, automated variance analysis, missed expense deduction identification, Section 24 modelling, SDLT scenarios, CGT planning, FHL eligibility. Tax Deadline Engine tracks SA, CT600, VAT, ATED per client with automated reminders.</p>
+          </div>
+          <div class="rp-tags"><span class="rptag">Multi-Client View</span><span class="rptag">Tax Modelling</span><span class="rptag">Xero/QuickBooks</span><span class="rptag">NL Queries</span><span class="rptag">Tax Deadline Engine</span><span class="rptag">Section 24</span></div>
+        </div>
+        <div class="rp-right">
+          <h4>Accountant portal modules</h4>
+          <div class="rp-modules">
+            <div class="rpm"><div class="rpm-name">Multi-Client Dashboard</div><div class="rpm-desc">Scoped access per client, portfolio overview</div></div>
+            <div class="rpm"><div class="rpm-name">Finance AI</div><div class="rpm-desc">NL queries, variance analysis, deduction finder</div></div>
+            <div class="rpm"><div class="rpm-name">Tax Planning</div><div class="rpm-desc">S24, SDLT, CGT, FHL, incorporation relief</div></div>
+            <div class="rpm"><div class="rpm-name">Tax Deadline Engine</div><div class="rpm-desc">SA, CT600, VAT, ATED calendar with client reminders</div></div>
+            <div class="rpm"><div class="rpm-name">Accounting Integration</div><div class="rpm-desc">Xero, QuickBooks, Sage per-client connection</div></div>
+            <div class="rpm"><div class="rpm-name">Report Generator</div><div class="rpm-desc">Client-ready reports, variance packs, board packs</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUYER -->
+      <div class="roles-panel" id="tab-buyer" role="tabpanel" aria-labelledby="t-buyer">
+        <div class="rp-left">
+          <div class="rp-code">USR·BUY — Domain B · Occupiers</div>
+          <h3 class="rp-title">Property Buyer &amp; Applicant</h3>
+          <p class="rp-tagline">Find, apply for, and complete on your next property — with AI guidance at every step from search through to completion.</p>
+          <p class="rp-desc">Prospective buyers and renters in the search-and-acquisition phase get a lightweight, intelligent portal that converts to an Owner or Tenant role on completion. Supports First-Time Buyers, BTL Investors, Rental Applicants.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Search with AI assistance</strong> — PropOS searches across all portals, matches properties to your specific criteria, and proactively alerts you to new listings that fit your profile.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>Referencing and application</strong> — digital referencing, income verification, Right to Rent check, and landlord/agent trust score visibility all in one application flow.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>SDLT, mortgage, and legal coordination</strong> — mortgage provider portal connectivity, SDLT calculation, and legal matter opening on offer acceptance.</div></div>
+          </div>
+          <div class="rp-ai"><div class="rp-ai-lbl">🧠 AI: Buyer Intelligence AI</div><p class="rp-ai-text">Property matching, area analysis, price history, SDLT calculation, mortgage affordability modelling, and legal cost estimation. Proactive new listing alerts matching your search profile.</p></div>
+          <div class="rp-tags"><span class="rptag">Property Search</span><span class="rptag">Digital Referencing</span><span class="rptag">SDLT Calculator</span><span class="rptag">Mortgage Portal</span><span class="rptag">AI Matching</span></div>
+        </div>
+        <div class="rp-right"><h4>Buyer portal modules</h4><div class="rp-modules"><div class="rpm"><div class="rpm-name">AI Property Search</div><div class="rpm-desc">Cross-portal search, alert matching, area analysis</div></div><div class="rpm"><div class="rpm-name">Referencing</div><div class="rpm-desc">Digital application, income verification, Right to Rent</div></div><div class="rpm"><div class="rpm-name">SDLT Calculator</div><div class="rpm-desc">Real-time SDLT scenarios for all ownership types</div></div><div class="rpm"><div class="rpm-name">Mortgage Connector</div><div class="rpm-desc">Lender portal access, affordability modelling</div></div><div class="rpm"><div class="rpm-name">Legal Gateway</div><div class="rpm-desc">Conveyancer connection, matter opening on offer</div></div><div class="rpm"><div class="rpm-name">Completion Tracker</div><div class="rpm-desc">Exchange to completion milestones, document checklist</div></div></div></div>
+      </div>
+
+      <!-- GOVERNMENT -->
+      <div class="roles-panel" id="tab-gov" role="tabpanel" aria-labelledby="t-gov">
+        <div class="rp-left">
+          <div class="rp-code">USR·GOV — Domain E · Government &amp; Regulatory</div>
+          <h3 class="rp-title">Government &amp; Regulatory Bodies</h3>
+          <p class="rp-tagline">Structured read-access and submission-access for planning authorities, land registries, HMRC, building control, and housing regulators.</p>
+          <p class="rp-desc">PropOS integrates with government workflows — providing structured data access for compliance verification, planning applications, and housing regulation. Supported: Planning Authorities, Land Registry, HMRC, Building Control, Housing Regulators, Environmental Agency.</p>
+          <div class="rp-steps">
+            <div class="rpstep"><div class="rpstep-n">01</div><div class="rpstep-t"><strong>Planning application submissions</strong> — developers submit planning documents, D&A statements, and condition discharge directly via PropOS. Planning authorities receive structured data in their required format.</div></div>
+            <div class="rpstep"><div class="rpstep-n">02</div><div class="rpstep-t"><strong>Compliance verification</strong> — read-access to property records, certificate status, and planning compliance history. EPC compliance data, HHSRS records, and building safety act compliance all accessible.</div></div>
+            <div class="rpstep"><div class="rpstep-n">03</div><div class="rpstep-t"><strong>HMRC data integration</strong> — tenancy deposit data, rental income reporting, and SDLT compliance verification connectors for qualifying government bodies.</div></div>
+          </div>
+          <div class="rp-ai"><div class="rp-ai-lbl">🧠 AI: Compliance Intelligence</div><p class="rp-ai-text">Structured compliance data verification, planning condition discharge tracking, and building safety act compliance monitoring across all registered properties.</p></div>
+          <div class="rp-tags"><span class="rptag">Planning Submissions</span><span class="rptag">Read-Access</span><span class="rptag">Compliance Data</span><span class="rptag">EPC Verification</span><span class="rptag">Land Registry API</span></div>
+        </div>
+        <div class="rp-right"><h4>Government portal modules</h4><div class="rp-modules"><div class="rpm"><div class="rpm-name">Planning Gateway</div><div class="rpm-desc">Application receipt, condition tracking, decision data</div></div><div class="rpm"><div class="rpm-name">Compliance Access</div><div class="rpm-desc">Structured read-access to property records</div></div><div class="rpm"><div class="rpm-name">Building Safety</div><div class="rpm-desc">Building Safety Act compliance, HRB registration</div></div><div class="rpm"><div class="rpm-name">EPC Registry</div><div class="rpm-desc">EPC certificate verification, compliance status</div></div><div class="rpm"><div class="rpm-name">Housing Standards</div><div class="rpm-desc">HHSRS records, selective licensing, enforcement</div></div><div class="rpm"><div class="rpm-name">HMRC Connector</div><div class="rpm-desc">Deposit data, rental income, SDLT verification</div></div></div></div>
+      </div>
+    </div><!-- /r -->
+  </div>
+</section>
+
+<!-- ══ PROVIDER BUSINESS OS ══ -->
+<section class="section" id="providers" aria-labelledby="prov-h">
+  <div class="container">
+    <div class="eyebrow r">Provider Business OS · DOC-007</div>
+    <h2 class="sec-title r d1" id="prov-h">A complete business OS for<br>every property <em>service provider.</em></h2>
+    <p class="sec-lead r d2">PropOS doesn't just give providers jobs — it runs their entire business. 18 operational modules across job management, HR, finance, fleet, and marketing — configured differently for each of the 6 provider types. Every provider has a Business OS tailored to their trade.</p>
+
+    <div class="pbos-grid r d3">
+      <article class="pbos-card">
+        <span class="pbos-icon" aria-hidden="true">🔧</span>
+        <div class="pbos-code">SVC·CON — Trades Contractor</div>
+        <h3 class="pbos-name">Plumbers, Electricians, Builders, HVAC</h3>
+        <p class="pbos-desc">Full job queue management by operative, branch, or company. Rota scheduling, field dispatch with vehicle tracking, van inventory management, invoicing, payroll, HR, and certification tracking. Cert-gated access control — your Gas Safe or NICEIC expiry blocks new job assignments and physical building access automatically.</p>
+        <div class="pbos-unique"><strong>Unique:</strong> Certification Expiry Engine tracks Gas Safe, NICEIC, CSCS, Part P per operative. Auto-blocks new jobs when cert expires. Sends renewal reminders 90 days out.</div>
+      </article>
+      <article class="pbos-card">
+        <span class="pbos-icon" aria-hidden="true">📐</span>
+        <div class="pbos-code">SVC·ENG — Engineering Practice</div>
+        <h3 class="pbos-name">Structural, M&E, Fire Safety, Geotechnical</h3>
+        <p class="pbos-desc">Multi-stage project and job management, HR with CPD and qualification records, time-based billing with project P&L, PI insurance tracking, and RICS/IStructE credential management. Every report requires signing engineer's RICS number, PI confirmation, and digital signature before delivery.</p>
+        <div class="pbos-unique"><strong>Unique:</strong> Report Sign-Off Workflow — creates a locked, auditable document with credential verification before delivery to client.</div>
+      </article>
+      <article class="pbos-card">
+        <span class="pbos-icon" aria-hidden="true">📦</span>
+        <div class="pbos-code">SVC·SUP — Supplier</div>
+        <h3 class="pbos-name">Materials, Equipment Hire, Fit-Out, Smart Tech</h3>
+        <p class="pbos-desc">Product catalogue management per branch, national account vs walk-in pricing, automated purchase order generation linked to job cards, delivery tracking, and invoice management. When a contractor raises a work order and van stock is insufficient, the nearest supplier branch is automatically identified and a purchase order raised — delivery coordinated to site.</p>
+        <div class="pbos-unique"><strong>Unique:</strong> Integrated supply chain — POs raised automatically from contractor job cards. Supplier reviews from contractors feed Trust Score. Stock availability visible to dispatching system.</div>
+      </article>
+      <article class="pbos-card">
+        <span class="pbos-icon" aria-hidden="true">🚛</span>
+        <div class="pbos-code">SVC·TRN — Transporter</div>
+        <h3 class="pbos-name">Removals, Haulage, Delivery, Waste</h3>
+        <p class="pbos-desc">Fleet management with MOT and service tracking, route optimisation, job scheduling, driver management with licence checks and tachograph records, fuel cost tracking, and job costing. Proof of delivery linked directly to tenancy handover records. Fleet Compliance Engine generates DVSA compliance reports automatically.</p>
+        <div class="pbos-unique"><strong>Unique:</strong> Fleet Compliance Engine — tracks MOT, road tax, service intervals, tachograph records, and driver licence validity per vehicle and driver. DVSA compliance reports auto-generated.</div>
+      </article>
+      <article class="pbos-card">
+        <span class="pbos-icon" aria-hidden="true">⚖️</span>
+        <div class="pbos-code">SVC·LAW — Law Firm / Solicitor</div>
+        <h3 class="pbos-name">Conveyancing, Lease, Litigation, Planning</h3>
+        <p class="pbos-desc">Matter management, client CRM with AML/KYC onboarding, time-recording, disbursements, billing, SRA compliance, PI insurance, and file review workflows. AML/KYC Engine runs automated source of funds checks, PEP & sanctions screening, and identity verification at matter opening.</p>
+        <div class="pbos-unique"><strong>Unique:</strong> AML/KYC Engine — generates SRA-compliant AML risk assessment per client automatically. Source of funds, PEP screening, and identity verification in one flow.</div>
+      </article>
+      <article class="pbos-card">
+        <span class="pbos-icon" aria-hidden="true">🤝</span>
+        <div class="pbos-code">USR·AGT — Estate / Letting Agency</div>
+        <h3 class="pbos-name">Sales, Lettings, Commercial Agents</h3>
+        <p class="pbos-desc">CRM and lead management, viewing scheduler, listings management with portal syndication to 11 platforms, commission tracking, branch P&L, and HR and branch management. Listing Performance Engine tracks each listing's views, enquiry rate, and days-to-let across Rightmove, Zoopla, and PropOS with AI pricing recommendations.</p>
+        <div class="pbos-unique"><strong>Unique:</strong> Listing Performance Engine — AI suggests price reductions based on comparable market movement when listings underperform.</div>
+      </article>
+    </div>
+
+    <!-- Emergency job flow -->
+    <div style="margin-top:var(--s12)">
+      <div class="eyebrow r">End-to-End Example</div>
+      <h3 class="sec-title r d1" style="font-size:clamp(22px,2.5vw,34px)">Emergency job flow: <em>how the system works together.</em></h3>
+      <p class="sec-lead r d2" style="margin-bottom:var(--s8)">An emergency plumbing job — from tenant report to invoice payment — showing how PropOS connects every provider type in one seamless workflow.</p>
+      <div class="flywheel r d3" role="list">
+        <div class="fw-step" role="listitem"><div class="fw-num">1</div><div class="fw-body"><div class="fw-title">Tenant Reports Burst Pipe via App</div><div class="fw-desc">Manager AI classifies as P1 Emergency. System searches approved contractor pool ranked by trust score + proximity + availability. Work order sent to Fix Fast Plumbing Ltd.</div></div><div class="fw-tag"><div class="fw-badge">Tenant Portal<br>+ AI Dispatch</div></div></div>
+        <div class="fw-step" role="listitem"><div class="fw-num">2</div><div class="fw-body"><div class="fw-title">Contractor Operations Activate</div><div class="fw-desc">Job card created instantly. Rota identifies nearest operative (Mike, 14 mins away). Van dispatched via Field Dispatch. Van inventory checked — parts verified against stock.</div></div><div class="fw-tag"><div class="fw-badge">Contractor<br>Business OS</div></div></div>
+        <div class="fw-step" role="listitem"><div class="fw-num">3</div><div class="fw-body"><div class="fw-title">Supplier Auto-Engaged for Parts</div><div class="fw-desc">15mm copper pipe not in van stock. PO raised automatically to nearest supplier branch. Delivery coordinated to site. Cost logged to job card in real time.</div></div><div class="fw-tag"><div class="fw-badge">Supplier<br>Auto-PO</div></div></div>
+        <div class="fw-step" role="listitem"><div class="fw-num">4</div><div class="fw-body"><div class="fw-title">Job Completion &amp; Invoice</div><div class="fw-desc">Mike submits job via mobile: photos, voice notes, time logged. AI generates completion report and invoice draft. Invoice sent to property manager via PropOS payment rail. Payroll reconciled.</div></div><div class="fw-tag"><div class="fw-badge">Invoice<br>+ Payroll</div></div></div>
+        <div class="fw-step" role="listitem"><div class="fw-num">5</div><div class="fw-body"><div class="fw-title">Trust &amp; Intelligence Loop Closes</div><div class="fw-desc">Owner + tenant reviews triggered simultaneously (neither sees the other's until both submit). Trust score updated. Job cost, time, and margin recorded. AI recommendations for future matching improved.</div></div><div class="fw-tag"><div class="fw-badge">Trust Network<br>+ AI Learning</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GROWTH / PROPAS ══ -->
+<section class="section section--alt" id="growth" aria-labelledby="growth-h">
+  <div class="container">
+    <div class="eyebrow r">Growth Layer · DOC-009 · PropAS</div>
+    <h2 class="sec-title r d1" id="growth-h">PropOS doesn't just give providers jobs.<br><em>It builds their entire business.</em></h2>
+    <p class="sec-lead r d2">Train. Certify. Market. Build. Connect. Grow. The PropAS Growth OS turns every provider on the platform into a stronger, more visible, more trusted professional. The stronger they are, the stronger the platform.</p>
+
+    <div class="pillars-grid r d3">
+      <article class="pillar">
+        <div class="pillar-code">Pillar 01 · PropAS Learn</div>
+        <span class="pillar-icon" aria-hidden="true">🎓</span>
+        <h3 class="pillar-name">Growth Academy</h3>
+        <p class="pillar-desc">200+ CPD-accredited courses from Level 2 trade essentials to Level 5 business leadership. Video, interactive, and cohort-based workshop formats. AI tutor for personalised learning paths.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">Trade skills, compliance, H&S, CDM, GDPR</div>
+          <div class="pillar-item">Business management and financial skills</div>
+          <div class="pillar-item">Employer-sponsored team enrolment</div>
+          <div class="pillar-item">5-level PropAS certification pathway</div>
+        </div>
+      </article>
+      <article class="pillar">
+        <div class="pillar-code">Pillar 02 · PropAS Certified</div>
+        <span class="pillar-icon" aria-hidden="true">🏅</span>
+        <h3 class="pillar-name">Blockchain Certification</h3>
+        <p class="pillar-desc">PropAS digital certificates anchored to a distributed ledger — permanently verifiable, unforgeable, scannable by QR code. Certificate expiry auto-blocks job categories. Renewal managed automatically.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">5-level PropAS pathway (Associate → Assessor)</div>
+          <div class="pillar-item">Blockchain-anchored — cannot be forged</div>
+          <div class="pillar-item">QR scan verification by clients instantly</div>
+          <div class="pillar-item">Mapped to Gas Safe, NICEIC, RICS, SRA, ICAEW</div>
+        </div>
+      </article>
+      <article class="pillar">
+        <div class="pillar-code">Pillar 03 · PropAS Studio</div>
+        <span class="pillar-icon" aria-hidden="true">✨</span>
+        <h3 class="pillar-name">AI Marketing Studio</h3>
+        <p class="pillar-desc">AI creates professional marketing from a provider's actual jobs — before & after photos, job descriptions, reviews — automatically turned into posts, ads, videos, case studies, and print materials.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">Company brochure auto-generated from real data</div>
+          <div class="pillar-item">Case study per completed job (PDF + social)</div>
+          <div class="pillar-item">Branded quote and proposal templates</div>
+          <div class="pillar-item">Brand identity kit (logo, colours, van livery)</div>
+        </div>
+      </article>
+      <article class="pillar">
+        <div class="pillar-code">Pillar 04 · PropAS Sites</div>
+        <span class="pillar-icon" aria-hidden="true">🌐</span>
+        <h3 class="pillar-name">Website Builder</h3>
+        <p class="pillar-desc">Professional website auto-generated from your PropOS profile — populated with services, jobs, reviews, and certificates. No technical skills needed. Live in minutes. Custom domain included.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">40+ trade-specific templates</div>
+          <div class="pillar-item">Trust score badge embedded automatically</div>
+          <div class="pillar-item">SEO-optimised for local trade search</div>
+          <div class="pillar-item">Google Business Profile sync, custom domain</div>
+        </div>
+      </article>
+      <article class="pillar">
+        <div class="pillar-code">Pillar 05 · PropAS Social</div>
+        <span class="pillar-icon" aria-hidden="true">📱</span>
+        <h3 class="pillar-name">Social Media Hub</h3>
+        <p class="pillar-desc">Connect Instagram, Facebook, LinkedIn, TikTok, YouTube, Google Business, WhatsApp Business — managed in one command centre. AI auto-generates posts from job completions and photos.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">AI content calendar from completed jobs</div>
+          <div class="pillar-item">Review broadcast — 5-star reviews auto-shared</div>
+          <div class="pillar-item">Google & Meta ad creation from job photos</div>
+          <div class="pillar-item">Unified analytics across all platforms</div>
+        </div>
+      </article>
+      <article class="pillar">
+        <div class="pillar-code">Pillar 06 · PropAS Grow</div>
+        <span class="pillar-icon" aria-hidden="true">📈</span>
+        <h3 class="pillar-name">Business Growth Engine</h3>
+        <p class="pillar-desc">AI analyses performance, market position, and competitor landscape — producing personalised monthly growth plans with revenue forecasts, pricing optimisation, and expansion timing recommendations.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">Business health score with improvement roadmap</div>
+          <div class="pillar-item">Market opportunity mapping by postcode</div>
+          <div class="pillar-item">Pricing optimisation by job type</div>
+          <div class="pillar-item">When to hire next person — AI forecasted</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST SCORE NETWORK ══ -->
+<section class="section" id="trust" aria-labelledby="trust-h">
+  <div class="container">
+    <div class="eyebrow r">Trust &amp; Reputation Network · DOC-006</div>
+    <h2 class="sec-title r d1" id="trust-h">The credit score<br>of the <em>property economy.</em></h2>
+    <p class="sec-lead r d2">PropOS introduces the property market's first universal trust score — from 0 to 1,000. Every participant, every transaction, every credential — verified, scored, and permanently on record. Like FICO scores transformed lending, PropOS's 5-tier trust network transforms property.</p>
+
+    <div class="trust-tiers r d2" role="list" aria-label="Trust score tiers">
+      <div class="tt" role="listitem"><div class="tt-score">950+</div><div class="tt-name">Verified Elite</div><div class="tt-range">Score: 950–1000</div><div class="tt-desc">All credentials verified. Zero disputes. 50+ transaction reviews. Featured placement in marketplace.</div></div>
+      <div class="tt" role="listitem"><div class="tt-score">800+</div><div class="tt-name">Trusted</div><div class="tt-range">Score: 800–949</div><div class="tt-desc">Strong credentials. Minimal disputes. Consistent positive track record across all roles.</div></div>
+      <div class="tt" role="listitem"><div class="tt-score">600+</div><div class="tt-name">Established</div><div class="tt-range">Score: 600–799</div><div class="tt-desc">Good track record. Some verifications in progress. Growing transaction history.</div></div>
+      <div class="tt" role="listitem"><div class="tt-score">400+</div><div class="tt-name">Building</div><div class="tt-range">Score: 400–599</div><div class="tt-desc">New to platform or limited transaction history. Trust score growing with each completion.</div></div>
+      <div class="tt" role="listitem"><div class="tt-score">0+</div><div class="tt-name">Provisional</div><div class="tt-range">Score: 0–399</div><div class="tt-desc">Unverified. Limited history. Action required for full platform access.</div></div>
+    </div>
+
+    <div style="margin-top:var(--s12)">
+      <div class="eyebrow r">Multi-Directional Review System</div>
+      <p class="sec-lead r d1" style="margin-bottom:var(--s8)">PropOS reviews are transaction-verified only (no transaction = no review) and mutual & simultaneous (neither party sees the other's review until both submit). Nine review directions across all role combinations.</p>
+      <div class="ai-grid r d2" role="list">
+        <div class="ai-card" role="listitem"><div class="ai-role">Trigger: Move-out + deposit settled</div><div class="ai-name">Landlord reviews Tenant</div><p class="ai-caps">Rent paid on time, property condition, communication quality, vacated cleanly, would re-let to. Visible only to other landlords and agents when tenant applies — not general public.</p><div class="ai-alert"><strong>Protection:</strong> Tenants cannot be disadvantaged for leaving negative reviews. Any landlord action (rent increase, S21) within 90 days of negative review triggers automatic compliance flag.</div></div>
+        <div class="ai-card" role="listitem"><div class="ai-role">Trigger: Tenancy ends + deposit resolved</div><div class="ai-name">Tenant reviews Landlord</div><p class="ai-caps">Repairs response speed, communication quality, property condition at move-in, deposit returned fairly, would rent from again. Visible to prospective tenants and agents.</p><div class="ai-alert"><strong>Impact:</strong> Good landlords attract better tenants. Bad landlords face reduced demand. Tenant power built into the platform infrastructure.</div></div>
+        <div class="ai-card" role="listitem"><div class="ai-role">Trigger: Work order signed off as complete</div><div class="ai-name">Manager/Owner reviews Contractor</div><p class="ai-caps">Quality of work, punctuality, quote accuracy, communication, would rehire. Visible to all owners and managers searching for contractors — summary visible on marketplace.</p><div class="ai-alert"><strong>+ Supplier reviews:</strong> Contractors also review suppliers on delivery accuracy, product quality, and price. Helps other contractors find reliable materials partners.</div></div>
+        <div class="ai-card" role="listitem"><div class="ai-role">Trigger: Invoice confirmed as paid</div><div class="ai-name">Contractor reviews Owner/Manager</div><p class="ai-caps">Payment speed, clear job instructions, property access ease, reasonable expectations, would work for again. Good contractors are selective about clients — this gives them market power.</p><div class="ai-alert"><strong>Critical:</strong> This is the only platform where good contractors can signal which clients they prefer — creating competitive pressure on landlords and managers to treat providers fairly.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AI LAYER ══ -->
+<section class="section section--alt" id="ai-layer" aria-labelledby="ai-h">
+  <div class="container">
+    <div class="eyebrow r">Intelligence Layer · DOC-005</div>
+    <h2 class="sec-title r d1" id="ai-h">12 AI assistants.<br><em>One per role.</em></h2>
+    <p class="sec-lead r d2">Rather than a single generic AI, PropOS deploys 12 role-specific AI assistants — each with deep domain expertise, live data access, and direct module integration. Every answer is grounded in your actual live data, scoped to your role and jurisdiction. Not generic responses.</p>
+    <div class="ai-grid r d3">
+      <article class="ai-card"><div class="ai-role">🏡 USR·OWN — Portfolio Intelligence AI</div><h3 class="ai-name">Landlord &amp; Investor AI</h3><p class="ai-caps">High-ROI postcode identification, yield comparison by city, gentrification scoring, CGT liability modelling, SDLT optimisation, Ltd company transfer modelling, and natural language portfolio queries.</p><div class="ai-alert"><strong>Proactive:</strong> Alerts when yield drops below target. Flags when rental income approaches higher tax bracket. Annual review reminders.</div></article>
+      <article class="ai-card"><div class="ai-role">🛋️ USR·TEN — Tenancy Assistant AI</div><h3 class="ai-name">Tenant AI</h3><p class="ai-caps">Clause-by-clause tenancy explanation in plain English, rights around repairs and landlord entry, deposit deduction rules, S21/S8 guidance, and photo-to-maintenance-request drafting.</p><div class="ai-alert"><strong>Proactive:</strong> Rent due date reminders 3 days before. Renewal date alerts. Statutory rights updates when legislation changes.</div></article>
+      <article class="ai-card"><div class="ai-role">🤝 USR·AGT — Sales &amp; Lettings Copilot</div><h3 class="ai-name">Agent AI</h3><p class="ai-caps">Auto-generate property descriptions, suggest optimal asking price from comparables, portal-specific SEO optimisation, and income verification inconsistency detection for applicants.</p><div class="ai-alert"><strong>Proactive:</strong> Alerts when listing exceeds 21 days without offer. Suggests price reduction based on comparable movement in the area.</div></article>
+      <article class="ai-card"><div class="ai-role">🏢 USR·MGR — Operations Command Centre</div><h3 class="ai-name">Property Manager AI</h3><p class="ai-caps">Priority surfacing across large portfolios, compliance deadline management, AI contractor dispatch by nearest/highest-rated, predictive maintenance from IoT sensor data, and automated arrears escalation.</p><div class="ai-alert"><strong>Proactive:</strong> Certificate expiry at 30/14/7 days. Contractor SLA breach. Rent overdue by 3 days triggers escalation workflow.</div></article>
+      <article class="ai-card"><div class="ai-role">⚖️ SVC·LAW — Legal Intelligence Engine</div><h3 class="ai-name">Property Lawyer AI</h3><p class="ai-caps">Draft lease clauses, S20 notices, conveyancing checklists. Research L&T Act 1954, identify title issues from Land Registry uploads, cross-jurisdiction guidance, AML risk assessment generation.</p><div class="ai-alert"><strong>Proactive:</strong> Exchange deadline at risk alerts. Title register anomaly flags. AML screening completion reminders.</div></article>
+      <article class="ai-card"><div class="ai-role">💰 SVC·ACC — Finance Intelligence AI</div><h3 class="ai-name">Property Accountant AI</h3><p class="ai-caps">Natural language ledger queries, automated variance analysis (actual vs budget), missed expense deductions, Section 24 modelling, SDLT scenarios, CGT planning, FHL eligibility, and incorporation relief modelling.</p><div class="ai-alert"><strong>Proactive:</strong> Client rental income approaching self-assessment threshold. Tax deadline engine — SA, CT600, VAT, ATED alerts per client.</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BUILDING INTELLIGENCE ══ -->
+<section class="section" aria-labelledby="bios-h">
+  <div class="container">
+    <div class="eyebrow r">Building Intelligence OS · DOC-010</div>
+    <h2 class="sec-title r d1" id="bios-h">Every building system.<br><em>One intelligence layer.</em></h2>
+    <p class="sec-lead r d2">PropOS sits above all physical building systems as the intelligence and orchestration layer — normalising data, triggering workflows, and surfacing unified dashboards. Existing BMS investments preserved. Connect and elevate — not rip and replace.</p>
+    <div class="iot-grid r d3" role="list">
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·FIRE·001</div><div class="iot-name">Fire Safety System</div><div class="iot-proto">NFPA / BS 5839 + Zone Mapping</div><p class="iot-desc">Addressable fire alarm panels, sprinkler systems, emergency lighting. Real-time zone mapping against floor plans. Auto-escalation to emergency services.</p><div class="iot-tags"><span class="iot-tag">Auto 999</span><span class="iot-tag">Zone Map</span><span class="iot-tag">3yr Log</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·ACS·003</div><div class="iot-name">Access Control</div><div class="iot-proto">Wiegand / OSDP — Lenel, Genetec, Salto</div><p class="iot-desc">Tenant onboarding auto-provisions credentials. Contractor cert expiry blocks physical entry automatically. Mobile NFC/BLE credentials. Visitor management.</p><div class="iot-tags"><span class="iot-tag">Cert-Gated</span><span class="iot-tag">Mobile Creds</span><span class="iot-tag">Audit Trails</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·HVAC·006</div><div class="iot-name">HVAC &amp; BMS</div><div class="iot-proto">BACnet / KNX — Honeywell, Siemens, JCI</div><p class="iot-desc">Full BMS integration. Occupancy-driven climate scheduling. Air quality monitoring (CO₂, VOC, PM2.5). Predictive maintenance via performance degradation. Legionella risk monitoring.</p><div class="iot-tags"><span class="iot-tag">Air Quality</span><span class="iot-tag">Predictive</span><span class="iot-tag">Legionella</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·ELEC·005</div><div class="iot-name">Electrical &amp; Power</div><div class="iot-proto">BACnet/Modbus — Smart Meters, EV Charging</div><p class="iot-desc">Per-tenant sub-metering for utility billing. Demand response via OpenADR. Solar PV and battery monitoring. EV charging infrastructure management.</p><div class="iot-tags"><span class="iot-tag">Sub-Metering</span><span class="iot-tag">Open ADR</span><span class="iot-tag">EV Charging</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·LIFT·007</div><div class="iot-name">Lift &amp; Vertical Transport</div><div class="iot-proto">OPC-UA — Otis, KONE, Schindler, TK</div><p class="iot-desc">Fault and downtime logging auto-creates maintenance work orders. LOLER compliance tracking automated. Inspection certificate management with auto-renewal reminders.</p><div class="iot-tags"><span class="iot-tag">Auto Work Orders</span><span class="iot-tag">LOLER</span><span class="iot-tag">Downtime Alerts</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·WATER·008</div><div class="iot-name">Water &amp; Drainage</div><div class="iot-proto">MQTT Sensors — Smart Meters, Leak Detection</div><p class="iot-desc">Legionella water temperature logging with automatic L8 compliance reporting. Per-tenant sub-metering. Flood sensor integration. Grey water and rainwater harvesting monitoring.</p><div class="iot-tags"><span class="iot-tag">L8 Compliance</span><span class="iot-tag">Leak Detection</span><span class="iot-tag">Sub-Metering</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·CCTV·002</div><div class="iot-name">CCTV &amp; Video</div><div class="iot-proto">ONVIF — Axis, Hikvision, Milestone</div><p class="iot-desc">AI video analytics for motion detection, perimeter breach, crowd density, vehicle recognition, and incident tagging. GDPR-compliant data retention policies per zone.</p><div class="iot-tags"><span class="iot-tag">AI Analytics</span><span class="iot-tag">GDPR Zones</span><span class="iot-tag">Incident Clips</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·PARK·009</div><div class="iot-name">Parking &amp; Vehicle</div><div class="iot-proto">ANPR / LPR — Bay Sensors, Barrier Control</div><p class="iot-desc">Bay occupancy sensors feed real-time availability. Tenant permit allocation. Visitor parking booking linked to tenancy module. EV charge point management and cost allocation.</p><div class="iot-tags"><span class="iot-tag">Permit Mgmt</span><span class="iot-tag">EV Integration</span><span class="iot-tag">Bay Sensors</span></div></div>
+      <div class="iot-card" role="listitem"><div class="iot-code">SYS·ENERGY·015</div><div class="iot-name">Energy &amp; Sustainability</div><div class="iot-proto">OpenADR 2.0 — Half-Hourly Smart Meter Data</div><p class="iot-desc">ESOS, SECR, and GRESB reporting automation. BREEAM operational data capture. Demand response via OpenADR — AI load-shifts non-critical systems during peak pricing periods.</p><div class="iot-tags"><span class="iot-tag">ESOS/SECR</span><span class="iot-tag">BREEAM</span><span class="iot-tag">Carbon Reporting</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PORTALS ══ -->
+<section class="section section--alt" aria-labelledby="portals-h">
+  <div class="container">
+    <div class="eyebrow r">Channel Distribution · DOC-011</div>
+    <h2 class="sec-title r d1" id="portals-h">One listing. Every portal.<br><em>Under 60 seconds.</em></h2>
+    <p class="sec-lead r d2">PropOS publishes, manages, and optimises properties across every major portal, short-let platform, and classified network — automatically. One update propagates to every connected platform instantly. AI rewrites listings per portal audience.</p>
+    <div class="portals-grid r d3" role="list">
+      <div class="portal" role="listitem"><div class="portal-name">🏠 Rightmove</div><div class="portal-cat">Sales &amp; Lettings · UK #1 · RTDF Feed</div><div class="portal-note">140M+ monthly visits. Premium listings, floorplan upload, virtual tour, Rightmove Plus Stats, lead auto-import.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🔍 Zoopla</div><div class="portal-cat">Sales &amp; Lettings · UK #2 · Z-Feed API</div><div class="portal-note">60M+ monthly visits. Zed-Index AVM, Zoopla Insight, enhanced listings, PrimeLocation bundle.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🌿 OnTheMarket</div><div class="portal-cat">Sales &amp; Lettings · UK #3 · REST API</div><div class="portal-note">24hr new listing exclusivity option. New Build section. CoStar Group integration. Lead auto-import.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🌸 Airbnb</div><div class="portal-cat">Short-Let · Global #1 · REST API</div><div class="portal-note">Calendar sync, dynamic pricing, guest messaging, auto check-in via ACS. 90-night STR cap compliance enforced automatically.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🛎️ Booking.com</div><div class="portal-cat">OTA #1 · 28M+ Properties Listed</div><div class="portal-note">Rate parity management, Genius programme, guest review syndication to PropOS Trust Network, full calendar sync.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🏖️ VRBO / HomeAway</div><div class="portal-cat">Vacation Rentals · Expedia EPS API</div><div class="portal-note">Multi-brand publish (Expedia, Hotels.com, Vrbo). Damage protection, review import, calendar sync.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🔑 OpenRent</div><div class="portal-cat">Private Landlord · UK #1 · API v2</div><div class="portal-note">Tenant referencing, AST generation, deposit registration. Rightmove &amp; Zoopla advertising included.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🛏️ SpareRoom</div><div class="portal-cat">Rooms &amp; HMO · UK #1 · REST API</div><div class="portal-note">Per-room listings, HMO management, student seasons scheduling, flatmate matching, lead auto-import.</div></div>
+      <div class="portal" role="listitem"><div class="portal-name">🌍 International Portals</div><div class="portal-cat">Global · 8+ Countries · Auto-Translate</div><div class="portal-note">Idealista (ES/IT/PT), Immowelt (DE), Green-Acres (FR), REA Group (AU), Property24 (ZA). Multi-currency, multi-language, AI local compliance.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARKET OPPORTUNITY ══ -->
+<section class="section" id="market" aria-labelledby="market-h">
+  <div class="container">
+    <div class="eyebrow r">Market Opportunity</div>
+    <h2 class="sec-title r d1" id="market-h">The largest untapped<br><em>digital frontier.</em></h2>
+    <p class="sec-lead r d2">Real estate represents approximately 60% of global wealth — yet less than 5% of property transactions are fully digitised. The global PropTech market is growing at 16.4% CAGR, reaching $185 billion by 2034. PropOS is positioned at the centre of this transformation.</p>
+
+    <div class="market-nums r d2" role="list" aria-label="Market statistics">
+      <div class="mnum" role="listitem"><div class="mnum-val">$185B</div><div class="mnum-lbl">PropTech TAM 2034</div><div class="mnum-sub">Growing at 16.4% CAGR from $47B in 2025</div></div>
+      <div class="mnum" role="listitem"><div class="mnum-val">$330T</div><div class="mnum-lbl">Global Real Estate Value</div><div class="mnum-sub">World's largest asset class, &lt;5% digitised</div></div>
+      <div class="mnum" role="listitem"><div class="mnum-val">$52B</div><div class="mnum-lbl">Serviceable Market 2030</div><div class="mnum-sub">PropOS's 7 target markets combined</div></div>
+      <div class="mnum" role="listitem"><div class="mnum-val">£240M</div><div class="mnum-lbl">5-Year ARR Target</div><div class="mnum-sub">600K+ professional users, 5M+ properties</div></div>
+    </div>
+
+    <!-- Revenue streams -->
+    <div class="eyebrow r">Revenue Model</div>
+    <h3 class="sec-title r d1" style="font-size:clamp(22px,2.5vw,34px);margin-bottom:var(--s8)">Six compounding<br><em>revenue streams.</em></h3>
+    <div class="revenue-list r d2" role="list">
+      <div class="rvitem" role="listitem"><div class="rvi-n">01</div><div class="rvi-body"><div class="rvi-name">SaaS Subscriptions</div><div class="rvi-desc">Landlord OS, Agent OS, Developer OS, Provider Business OS. Tiered by portfolio size, module access, and AI usage. Estimated 60% of total revenue with high NRR due to deep workflow integration.</div></div><div class="rvi-price"><div class="rvi-tag">£29–199/mo</div></div></div>
+      <div class="rvitem" role="listitem"><div class="rvi-n">02</div><div class="rvi-body"><div class="rvi-name">Marketplace Commission</div><div class="rvi-desc">Commission on jobs placed through the service provider marketplace — maintenance, construction, legal, financial services. Scales with property volume on platform.</div></div><div class="rvi-price"><div class="rvi-tag">% per job</div></div></div>
+      <div class="rvitem" role="listitem"><div class="rvi-n">03</div><div class="rvi-body"><div class="rvi-name">Listing &amp; Lead Generation</div><div class="rvi-desc">Properties published across 11+ portals via Channel Distribution Engine. Premium listing packages, enhanced lead routing, and AI-optimised marketing upsells.</div></div><div class="rvi-price"><div class="rvi-tag">£10–50/listing</div></div></div>
+      <div class="rvitem" role="listitem"><div class="rvi-n">04</div><div class="rvi-body"><div class="rvi-name">PropAS Academy</div><div class="rvi-desc">200+ courses, 5-level certification pathway, blockchain-linked PropAS credentials, annual cert renewal fees, and corporate training packages for housing associations and law firms.</div></div><div class="rvi-price"><div class="rvi-tag">£49–499/course</div></div></div>
+      <div class="rvitem" role="listitem"><div class="rvi-n">05</div><div class="rvi-body"><div class="rvi-name">Trust Verification &amp; Identity</div><div class="rvi-desc">ID verification, credit checks, AML/KYC screening, professional credential verification, blockchain-anchored trust profile creation. B2B API for third-party PropTech platforms.</div></div><div class="rvi-price"><div class="rvi-tag">£15–95/check</div></div></div>
+      <div class="rvitem" role="listitem"><div class="rvi-n">06</div><div class="rvi-body"><div class="rvi-name">Data, API &amp; Institutional</div><div class="rvi-desc">Anonymised market data, portfolio analytics, and API access for REITs, mortgage lenders, and insurers. Building Intelligence OS IoT data streams. PropTech-as-a-platform licensing.</div></div><div class="rvi-price"><div class="rvi-tag">£10K–250K/yr</div></div></div>
+    </div>
+
+    <!-- Expansion -->
+    <div style="margin-top:var(--s12)">
+      <div class="eyebrow r">Global Expansion Roadmap</div>
+      <h3 class="sec-title r d1" style="font-size:clamp(22px,2.5vw,34px);margin-bottom:var(--s8)">Seven phases.<br><em>Seven markets. One platform.</em></h3>
+      <div class="expansion-list r d2" role="list">
+        <div class="exp-item" role="listitem"><div class="exp-flag" aria-label="UK">🇬🇧</div><div class="exp-phase"><div class="exp-phase-label">Phase 1<br>Launch</div></div><div class="exp-body"><div class="exp-market">United Kingdom</div><div class="exp-detail">Full 13-module launch. 50K professional users, 500K properties, PropAS Academy live, 5K+ service providers. Revenue target: £3–5M ARR.</div></div><div class="exp-timing"><div class="exp-timing-txt">2025–2026<br>Months 1–18</div></div></div>
+        <div class="exp-item" role="listitem"><div class="exp-flag" aria-label="EU">🇪🇺</div><div class="exp-phase"><div class="exp-phase-label">Phase 2<br>Expand</div></div><div class="exp-body"><div class="exp-market">European Union</div><div class="exp-detail">Germany, France, Spain, Netherlands. EU GDPR and Green Deal compliance. 4-language AI layer. Target 25K EU professionals in Year 1.</div></div><div class="exp-timing"><div class="exp-timing-txt">2026<br>Months 12–30</div></div></div>
+        <div class="exp-item" role="listitem"><div class="exp-flag" aria-label="UAE">🇦🇪</div><div class="exp-phase"><div class="exp-phase-label">Phase 3<br>Expand</div></div><div class="exp-body"><div class="exp-market">Middle East (UAE, KSA)</div><div class="exp-detail">Dubai Land Department API integration. Saudi Arabia Vision 2030 PropTech partnership. Arabic AI layer. Blockchain title deed integration. Target 10K UAE professionals Y1.</div></div><div class="exp-timing"><div class="exp-timing-txt">2026–2027<br>Months 18–36</div></div></div>
+        <div class="exp-item" role="listitem"><div class="exp-flag" aria-label="USA">🇺🇸</div><div class="exp-phase"><div class="exp-phase-label">Phase 4<br>Global</div></div><div class="exp-body"><div class="exp-market">US &amp; Canada</div><div class="exp-detail">Enter with UK/EU/UAE traction. NYC Local Law 97 ESG compliance as entry wedge. Target independent landlords and boutique agencies underserved by Yardi/RealPage.</div></div><div class="exp-timing"><div class="exp-timing-txt">2027–2028<br>Months 30–48</div></div></div>
+        <div class="exp-item" role="listitem"><div class="exp-flag" aria-label="India">🇮🇳</div><div class="exp-phase"><div class="exp-phase-label">Phase 5<br>Emerging</div></div><div class="exp-body"><div class="exp-market">India</div><div class="exp-detail">RERA compliance infrastructure partnership. English + Hindi AI layer. Target Bengaluru/Mumbai tech-forward landlords. PropAS aligned to RICS India and NAREDCO standards.</div></div><div class="exp-timing"><div class="exp-timing-txt">2028<br>Months 36–54</div></div></div>
+        <div class="exp-item" role="listitem"><div class="exp-flag" aria-label="Australia">🇦🇺</div><div class="exp-phase"><div class="exp-phase-label">Phase 6<br>Pacific</div></div><div class="exp-body"><div class="exp-market">Australia &amp; New Zealand</div><div class="exp-detail">UK codebase commonality leveraged. REACH Australia programme partnership. Targets REA Group gap: management, trust, and provider tools absent from dominant portal.</div></div><div class="exp-timing"><div class="exp-timing-txt">2028–2029<br>Months 42–60</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ QUOTE ══ -->
+<section class="quote-section section--alt2" aria-label="Investor perspective">
+  <div class="quote-inner r">
+    <span class="quote-mark" aria-hidden="true">"</span>
+    <blockquote class="quote-text">
+      PropOS is positioned to become the operating system for the global property economy — analogous to what Salesforce did for CRM, what Shopify did for e-commerce, and what Stripe did for payments. The platform captures value at <em>every node in the property transaction graph.</em>
+    </blockquote>
+    <div class="quote-rule" aria-hidden="true"></div>
+    <cite class="quote-attr">PropOS Investor Documentation — Series A · Global Market Research · 2025</cite>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section id="cta" aria-labelledby="cta-h">
+  <div class="cta-glow-1" aria-hidden="true"></div>
+  <div class="cta-glow-2" aria-hidden="true"></div>
+  <div style="max-width:var(--max-w);margin:0 auto;position:relative;z-index:1">
+    <div class="cta-inner">
+      <div class="eyebrow r"><span class="live-dot" aria-hidden="true"></span>Early Access — Waitlist Now Open</div>
+      <h2 class="cta-title r d1" id="cta-h">Be first inside<br>the new<br><em>property OS.</em></h2>
+      <p class="cta-sub r d2">Join the PropOS waitlist and get priority access at launch — whether you're a landlord, agent, developer, contractor, supplier, transporter, lawyer, or accountant. We're onboarding select professionals first across all 18+ role types.</p>
+      <div class="r d3">
+        <form id="cta-form" class="cta-form" onsubmit="handleSubmit(event,'cta')" novalidate>
+          <label for="cta-email" class="sr-only">Email address</label>
+          <input class="email-input" type="email" id="cta-email" placeholder="your@email.com" required autocomplete="email">
+          <button class="email-sub" type="submit">Secure My Spot →</button>
+        </form>
+        <p class="form-note" style="margin-top:10px">No spam · No credit card · Unsubscribe anytime</p>
+        <div class="form-success" id="cta-success" role="alert" aria-live="polite">
+          <div class="success-chk" aria-hidden="true">✓</div>
+          <span>You're on the list — we'll be in touch before launch.</span>
+        </div>
+      </div>
+      <div class="cta-perks r d4" role="list">
+        <div class="cta-perk" role="listitem">Priority platform access</div>
+        <div class="cta-perk" role="listitem">Launch pricing locked — up to 40% off</div>
+        <div class="cta-perk" role="listitem">Dedicated onboarding session</div>
+        <div class="cta-perk" role="listitem">PropAS Academy early enrolment</div>
+        <div class="cta-perk" role="listitem">No credit card required</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <a href="/" class="footer-logo" aria-label="PropOS home">Prop<em>OS</em></a>
+      <p class="footer-tagline">The Global Property Market Operating System. 13 modules. 18+ user roles. 50+ provider categories. Launching globally 2025.</p>
+    </div>
+    <div>
+      <p class="footer-col-ttl">Platform</p>
+      <ul class="footer-links">
+        <li><a href="#platform">Architecture</a></li>
+        <li><a href="#for-you">For Landlords</a></li>
+        <li><a href="#for-you">For Tenants</a></li>
+        <li><a href="#for-you">For Agents</a></li>
+        <li><a href="#for-you">For Developers</a></li>
+        <li><a href="#providers">For Contractors</a></li>
+        <li><a href="#providers">For Suppliers</a></li>
+        <li><a href="#providers">For Transporters</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-ttl">Intelligence</p>
+      <ul class="footer-links">
+        <li><a href="#ai-layer">AI Assistants</a></li>
+        <li><a href="#bios-h">Building Intelligence OS</a></li>
+        <li><a href="#trust">Trust Score Network</a></li>
+        <li><a href="#growth">PropAS Academy</a></li>
+        <li><a href="#growth">Marketing Studio</a></li>
+        <li><a href="#growth">Growth Engine</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-ttl">Company</p>
+      <ul class="footer-links">
+        <li><a href="#market">Market Opportunity</a></li>
+        <li><a href="#market">Revenue Model</a></li>
+        <li><a href="#market">Global Expansion</a></li>
+        <li><a href="#cta">Investor Deck</a></li>
+        <li><a href="#cta">Early Access</a></li>
+        <li><a href="#cta">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-ttl">Legal</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">GDPR Compliance</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 PropOS Ltd · Global Property Market Operating System · All rights reserved · Registered in England &amp; Wales</p>
+    <p class="footer-copy">Series A 2025 · Launching UK → EU → UAE → US → India → Australia</p>
+  </div>
+</footer>
+
+<script>
+/* ══ WAITLIST ══ */
+const waitlist=[];
+function handleSubmit(e,id){
+  e.preventDefault();
+  const inp=document.getElementById(id+'-email');
+  const frm=document.getElementById(id+'-form');
+  const suc=document.getElementById(id+'-success');
+  if(!inp||!inp.value.trim())return;
+  waitlist.push({email:inp.value.trim(),source:id,ts:new Date().toISOString()});
+  // TODO: POST to /api/waitlist or connect Mailchimp/ConvertKit/etc.
+  console.log('[PropOS Waitlist]',waitlist);
+  if(frm)frm.style.display='none';
+  if(suc)suc.style.display='flex';
+}
+
+/* ══ NAVIGATION ══ */
+const nav=document.getElementById('nav');
+const ham=document.getElementById('ham');
+const drawer=document.getElementById('nav-drawer');
+
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>30);
+},{passive:true});
+
+ham.addEventListener('click',()=>{
+  const open=ham.classList.toggle('open');
+  ham.setAttribute('aria-expanded',open);
+  drawer.setAttribute('aria-hidden',!open);
+  drawer.classList.toggle('open',open);
+});
+
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('open');
+  ham.setAttribute('aria-expanded','false');
+  drawer.setAttribute('aria-hidden','true');
+  drawer.classList.remove('open');
+}));
+
+/* Close drawer on outside click */
+document.addEventListener('click',e=>{
+  if(drawer.classList.contains('open')&&!drawer.contains(e.target)&&!ham.contains(e.target)){
+    ham.classList.remove('open');ham.setAttribute('aria-expanded','false');
+    drawer.setAttribute('aria-hidden','true');drawer.classList.remove('open');
+  }
+});
+
+/* ══ ROLE TABS ══ */
+function switchRole(id){
+  document.querySelectorAll('.rtab').forEach(t=>{
+    t.classList.remove('active');t.setAttribute('aria-selected','false');t.setAttribute('tabindex','-1');
+  });
+  document.querySelectorAll('.roles-panel').forEach(p=>p.classList.remove('active'));
+  const tab=document.getElementById('t-'+id);
+  const panel=document.getElementById('tab-'+id);
+  if(tab){tab.classList.add('active');tab.setAttribute('aria-selected','true');tab.setAttribute('tabindex','0')}
+  if(panel)panel.classList.add('active');
+}
+
+/* Keyboard navigation for tabs */
+document.querySelectorAll('.rtab').forEach((tab,i,tabs)=>{
+  tab.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'){tabs[(i+1)%tabs.length].click();tabs[(i+1)%tabs.length].focus()}
+    if(e.key==='ArrowLeft'){tabs[(i-1+tabs.length)%tabs.length].click();tabs[(i-1+tabs.length)%tabs.length].focus()}
+  });
+});
+
+/* ══ SCROLL REVEAL ══ */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}});
+},{threshold:0.07,rootMargin:'0px 0px -32px 0px'});
+document.querySelectorAll('.r').forEach(el=>io.observe(el));
+
+/* ══ SMOOTH SCROLL ══ */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+</script>
+</body>
+</html>
